@@ -32,31 +32,40 @@ public final class NetworkClientNotifier implements FishingMiniGameManager.Clien
 
     @Override
     public void onDirectionChanged(ServerPlayer player, SwipeDirection nextDirection) {
-        // 方向變更時，成功次數已在 FishingMiniGameData 中遞增，
-        // 但此介面沒有提供計數參數；從玩家的 Attachment 讀取最新值。
         var data = player.getData(com.swingfishing.fishing.data.ModAttachments.FISHING_MINI_GAME.get());
+        int required = data.getRolledRarity() != null
+                ? data.getRolledRarity().requiredSuccess
+                : ModConfig.REQUIRED_SUCCESS_SWIPES.get();
+        int maxFailed = data.getRolledRarity() != null
+                ? data.getRolledRarity().maxFailed
+                : ModConfig.MAX_FAILED_SWIPES.get();
         send(player, true, nextDirection,
-                data.getSuccessCount(), ModConfig.REQUIRED_SUCCESS_SWIPES.get(),
-                data.getFailedCount(), ModConfig.MAX_FAILED_SWIPES.get(),
+                data.getSuccessCount(), required,
+                data.getFailedCount(), maxFailed,
                 MiniGameSyncPayload.EndReason.NONE);
     }
 
     @Override
     public void onSuccess(ServerPlayer player, int successCount, int requiredSuccess) {
-        // 成功但未換方向（例如成功後立即達標）時，發送不含方向變更的同步。
         var data = player.getData(com.swingfishing.fishing.data.ModAttachments.FISHING_MINI_GAME.get());
+        int maxFailed = data.getRolledRarity() != null
+                ? data.getRolledRarity().maxFailed
+                : ModConfig.MAX_FAILED_SWIPES.get();
         send(player, data.isActive(), data.getTargetDirection(),
-                data.getSuccessCount(), ModConfig.REQUIRED_SUCCESS_SWIPES.get(),
-                data.getFailedCount(), ModConfig.MAX_FAILED_SWIPES.get(),
+                successCount, requiredSuccess,
+                data.getFailedCount(), maxFailed,
                 MiniGameSyncPayload.EndReason.NONE);
     }
 
     @Override
     public void onFailure(ServerPlayer player, int failedCount, int maxFailed) {
         var data = player.getData(com.swingfishing.fishing.data.ModAttachments.FISHING_MINI_GAME.get());
+        int required = data.getRolledRarity() != null
+                ? data.getRolledRarity().requiredSuccess
+                : ModConfig.REQUIRED_SUCCESS_SWIPES.get();
         send(player, data.isActive(), data.getTargetDirection(),
-                data.getSuccessCount(), ModConfig.REQUIRED_SUCCESS_SWIPES.get(),
-                data.getFailedCount(), ModConfig.MAX_FAILED_SWIPES.get(),
+                data.getSuccessCount(), required,
+                failedCount, maxFailed,
                 MiniGameSyncPayload.EndReason.NONE);
     }
 

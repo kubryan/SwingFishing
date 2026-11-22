@@ -67,17 +67,14 @@ public final class FishRarityLookup {
 
         // ========== EPIC ==========
         put(FishRarity.EPIC,
-                "divine_catfish", "divine_jellyfish",
-                "magma_fish", "sculk_ward",
-                "aurora", "elderscale", "end_glow", "end_jellyfish", "end_starfish",
-                "voidfin", "cerberay", "dreamliner", "morganite", "obidontiee",
+                "divine_catfish", "sculk_ward",
+                "end_glow", "end_jellyfish", "end_starfish",
+                "cerberay", "dreamliner", "morganite", "obidontiee",
                 "whiteveil", "willish", "witchfish", "solarfish"
         );
 
         // ========== MYTHIC ==========
-        put(FishRarity.MYTHIC,
-                "voidbiter", "joel" // joel 若你想當 Unique 可再改
-                // 其餘從 Epic 上調或後補
+        put(FishRarity.MYTHIC
         );
 
         // ========== LEGENDARY ==========
@@ -87,14 +84,16 @@ public final class FishRarityLookup {
         );
 
         // ========== UNIQUE ==========
-        put(FishRarity.UNIQUE,
-                "joel", "the_quarrish", "suneater"
+        put(FishRarity.UNIQUE
         );
     }
 
     private static void put(FishRarity rarity, String... ids) {
         for (String id : ids) {
-            BY_ID.put(id, rarity);
+            FishRarity old = BY_ID.put(id, rarity);
+            if (old != null) {
+                BY_RARITY.get(old).remove(id);
+            }
             BY_RARITY.get(rarity).add(id);
         }
     }

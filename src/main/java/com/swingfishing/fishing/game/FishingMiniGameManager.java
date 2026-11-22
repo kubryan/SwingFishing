@@ -118,7 +118,6 @@ public final class FishingMiniGameManager {
 
         FishingMiniGameData data = player.getData(ModAttachments.FISHING_MINI_GAME.get());
         if (data.isActive()) {
-            // 已經在進行中，不重複開始。
             return;
         }
 
@@ -126,32 +125,31 @@ public final class FishingMiniGameManager {
         data.start(firstDirection, hook.getUUID(), hook.blockPosition(),
                 player.level().dimension().location(), 0);
 
-        // 1. 決定生態域對應的魚 ID 池（可先從現有四個 loot 表維護一份 Set，或暫時 hardcode）
-        Set<String> biomePool = resolveBiomeFishPool(player, data); // 你實作：ocean/river/nether/end
-
-        // 2. Roll 稀有度
+        // 先 roll 稀有度，再從生態域池抽魚
+        Set<String> biomePool = resolveBiomeFishPool(player, data);
         FishRarity rarity = FishRarity.roll();
-
-        // 3. 從該稀有度 ∩ 生態域池抽一條；若該階在此生態域沒魚，往下階找
         String fishId = pickFish(rarity, biomePool);
         if (fishId == null) {
-            // 極端情況：整池都沒有，退回任意一條或中止
+            // 極端情況：池子與分級對不上，中止本局避免空狀態
+            data.clear();
             return;
         }
-        data.setRolledCatch(rarity, fishId);
-
-        // 4. 通知客戶端（可把 rarity 也塞進 sync payload，方便 HUD 顯示「稀有度：史詩」）
-        notifier.onGameStarted(player, firstDirection);
+        // 實際稀有度以「抽到的魚」為準（可能因該階無魚而降/升階）
+        FishRarity actualRarity = FishRarityLookup.get(fishId);
+        data.setRolledCatch(actualRarity, fishId);
 
         notifier.onGameStarted(player, firstDirection);
         player.level().playSound(null, player.blockPosition(),
                 SoundEvents.FISHING_BOBBER_SPLASH, SoundSource.PLAYERS, 1.0F, 1.0F);
     }
 
+    /**
+     * 從 preferred 稀有度開始，在生態域池內抽一條魚；該階沒魚則往下找，再往上找。
+     */
     private static String pickFish(FishRarity preferred, Set<String> biomePool) {
-        // 從 preferred 往 COMMON 方向找，直到有魚
         FishRarity[] order = FishRarity.values();
         int start = preferred.ordinal();
+
         for (int i = start; i >= 0; i--) {
             Set<String> candidates = FishRarityLookup.getFishOfRarityInPool(order[i], biomePool);
             if (!candidates.isEmpty()) {
@@ -159,7 +157,6 @@ public final class FishingMiniGameManager {
                 return arr[(int) (Math.random() * arr.length)];
             }
         }
-        // 再往上找
         for (int i = start + 1; i < order.length; i++) {
             Set<String> candidates = FishRarityLookup.getFishOfRarityInPool(order[i], biomePool);
             if (!candidates.isEmpty()) {
@@ -235,12 +232,9 @@ public final class FishingMiniGameManager {
      */
     public static int computeTimeoutTicks(ServerPlayer player) {
         FishingMiniGameData data = player.getData(ModAttachments.FISHING_MINI_GAME.get());
-        int base;
-        if (data.getRolledRarity() != null) {
-            base = data.getRolledRarity().timeoutTicks;
-        } else {
-            base = ModConfig.SWIPE_TIMEOUT_TICKS.get();
-        }
+        int base = data.getRolledRarity() != null
+                ? data.getRolledRarity().timeoutTicks
+                : ModConfig.SWIPE_TIMEOUT_TICKS.get();
         int lureLevel = getFishingRodEnchantmentLevel(
                 player, net.minecraft.world.item.enchantment.Enchantments.LURE);
         int perLevel = ModConfig.LURE_BONUS_TICKS_PER_LEVEL.get();
@@ -412,6 +406,62 @@ public final class FishingMiniGameManager {
         }
     }
 
+    /** 依浮標位置決定本生態域可用的魚 ID 池（不含命名空間）。 */
+    private static Set<String> resolveBiomeFishPool(ServerPlayer player, FishingMiniGameData data) {
+        BlockPos bobberPos = data.getBobberBlockPos();
+        ResourceLocation bobberDimension = data.getBobberDimension();
+        if (bobberPos == null || bobberDimension == null) {
+            bobberPos = player.blockPosition();
+            bobberDimension = player.level().dimension().location();
+        }
+
+        if (Level.NETHER.location().equals(bobberDimension)) {
+            return Set.of(
+                    "deepslatefish", "embergill", "fossilized_angelfish", "glowing_dark",
+                    "glowstone_pufferfish", "glowstone_seeker", "magma_fish", "scorchfish",
+                    "sculk_ward", "sculkfish"
+            );
+        }
+        if (Level.END.location().equals(bobberDimension)) {
+            return Set.of(
+                    "aurora", "elderscale", "end_glow", "end_jellyfish", "end_starfish",
+                    "end_starfish_shashlik", "suneater", "vesani", "voidbiter", "voidfin", "ward"
+            );
+        }
+        if (player.serverLevel().getBiome(bobberPos).is(BiomeTags.IS_OCEAN)) {
+            return Set.of(
+                    "amethystback", "anglerfish", "bigeye_tuna", "blossomfish", "blue_herring",
+                    "bluegigi", "boreal", "bright_amethyst_snapper", "cactifish", "cerberay",
+                    "charfish", "cryospine", "crystalback_boreal", "dark_amethyst_snapper",
+                    "deepjaw_herring", "divine_jellyfish", "dreamliner", "dusktail_snapper",
+                    "fish_bones", "flowerfish", "garnet_mackerel", "gold_fan", "ice_cod",
+                    "ironjaw_herring", "jellyfish", "joel", "lily_snapper", "livid_bamboo",
+                    "luminous_mackerel", "luminous_shrimp", "mangrove_jack", "mistback_chub",
+                    "morganite", "mothfish", "obidontiee", "ordinary_mackerel", "ordinary_shrimp",
+                    "pale_pinfish", "pandafish", "peakdweller", "pinfish", "redscaled_tuna",
+                    "rose_siamese_fish", "sandtail", "shroomfish", "solarfish", "sporefish",
+                    "starfish", "starfish_shashlik", "stonefish", "tentacle", "the_quarrish",
+                    "whiteveil", "willish", "witchfish", "yellowstone_fish"
+            );
+        }
+        // river / 一般淡水
+        return Set.of(
+                "agave_bream", "aquamarine_pike", "azure_crystalback_minnow", "blue_crystal_fin",
+                "blue_ice_pike", "carpenjoe", "charged_thunderfin", "chorus_minnow", "cloudfin",
+                "crystalback_minnow", "crystalback_sturgeon", "crystalback_trout", "deformed_carp",
+                "divine_catfish", "downfall_bream", "driftfin", "drifting_bream", "dripfin", "eel",
+                "frostgill_chub", "frostjaw_trout", "ghostly_pike", "glimmergill", "hollowbelly_darter",
+                "icetooth_sturgeon", "lightning_bass", "lilac_minnow", "luminous_carp", "lush_pike",
+                "mirage_carp", "mossfin", "muddy_catfish", "oasis_sturgeon", "ordinary_carp",
+                "ordinary_catfish", "pale_carp", "petal_bass", "petaldrift_carp", "pink_koi",
+                "purple_carp", "pyrotrout", "rainfin", "red_koi", "ripple_catfish", "rockgill",
+                "sage_catfish", "scalding_pike", "sea_bass", "shadowfin", "silverfin_pike",
+                "silverveil_perch", "sludge_catfish", "sun_seeking_carp", "sunflower_carp",
+                "sunny_sturgeon", "thunder_bass", "thunderfin", "tropical_catfish", "twilight_koi",
+                "vivid_moss", "willow_bream", "wintery_pike", "yellow_koi"
+        );
+    }
+
     private static void handleTimeout(ServerPlayer player, FishingMiniGameData data) {
         int maxFailed = data.getRolledRarity() != null
                 ? data.getRolledRarity().maxFailed
@@ -502,7 +552,6 @@ public final class FishingMiniGameManager {
     private static void grantFishingLoot(ServerPlayer player, FishingMiniGameData data) {
         String fishId = data.getRolledFishId();
 
-        // 有預抽結果：直接發放該魚
         if (fishId != null && !fishId.isEmpty()) {
             ResourceLocation itemKey = ResourceLocation.fromNamespaceAndPath(SwingFishing.MOD_ID, fishId);
             var item = BuiltInRegistries.ITEM.get(itemKey);
@@ -519,10 +568,9 @@ public final class FishingMiniGameManager {
                 }
                 return;
             }
-            // item 無效則落入下方 fallback
         }
 
-        // Fallback：舊流程，依生態域 Loot Table 發放
+        // Fallback：舊 Loot Table
         ResourceKey<LootTable> lootTableKey = ResourceKey.create(
                 Registries.LOOT_TABLE, selectFishingLootTable(player, data));
         LootTable lootTable = player.serverLevel().getServer().reloadableRegistries()
@@ -556,6 +604,8 @@ public final class FishingMiniGameManager {
             }
         }
     }
+
+
 
     private static ResourceLocation selectFishingLootTable(ServerPlayer player, FishingMiniGameData data) {
         BlockPos bobberPos = data.getBobberBlockPos();
