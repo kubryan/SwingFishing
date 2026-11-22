@@ -9,12 +9,14 @@ import com.swingfishing.fishing.data.ModAttachments;
 import com.swingfishing.network.MiniGameSyncPayload;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.entity.projectile.FishingHook;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.storage.loot.LootParams;
@@ -562,13 +564,14 @@ public final class FishingMiniGameManager {
             var item = BuiltInRegistries.ITEM.get(itemKey);
             if (item != null && item != net.minecraft.world.item.Items.AIR) {
                 ItemStack stack = new ItemStack(item);
-                var fishName = stack.getHoverName();
+                Component fishName = stack.getHoverName(); // ✅ 先存好，count 還是 1
+
                 if (!player.getInventory().add(stack)) {
                     player.drop(stack, false);
                 }
                 if (data.addCaughtFish(fishId)) {
                     player.sendSystemMessage(net.minecraft.network.chat.Component.translatable(
-                            "message.swingfishing.fish_book.new_discovery", fishName));
+                            "message.swingfishing.fish_book.new_discovery", fishName)); // ✅ 用存好的
                     player.level().playSound(null, player.blockPosition(),
                             SoundEvents.PLAYER_LEVELUP, SoundSource.PLAYERS, 0.5F, 2.0F);
                 }
@@ -596,18 +599,18 @@ public final class FishingMiniGameManager {
                 .create(LootContextParamSets.FISHING);
 
         for (ItemStack stack : lootTable.getRandomItems(params)) {
-            var fishName = stack.getHoverName();
+            Item stackItem = stack.getItem();         // ✅ 先存好
+            Component stackName = stack.getHoverName(); // ✅ 先存好
+
             if (!player.getInventory().add(stack)) {
                 player.drop(stack, false);
             }
-            ResourceLocation itemId = BuiltInRegistries.ITEM.getKey(stack.getItem());
+            ResourceLocation itemId = BuiltInRegistries.ITEM.getKey(stackItem); // ✅ 用存好的
             if (SwingFishing.MOD_ID.equals(itemId.getNamespace())
                     && !"fish_book".equals(itemId.getPath())
                     && data.addCaughtFish(itemId.getPath())) {
                 player.sendSystemMessage(net.minecraft.network.chat.Component.translatable(
-                        "message.swingfishing.fish_book.new_discovery", fishName));
-                player.level().playSound(null, player.blockPosition(),
-                        SoundEvents.PLAYER_LEVELUP, SoundSource.PLAYERS, 0.5F, 2.0F);
+                        "message.swingfishing.fish_book.new_discovery", stackName)); // ✅
             }
         }
     }
