@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.willish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:willish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:willish",
+      "title": "item.swingfishing.willish",
+      "text": "entry.swingfishing.willish.desc"
+    }
+  ]
+}

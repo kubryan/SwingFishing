@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.ordinary_carp",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:ordinary_carp",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:ordinary_carp",
+      "title": "item.swingfishing.ordinary_carp",
+      "text": "entry.swingfishing.ordinary_carp.desc"
+    }
+  ]
+}

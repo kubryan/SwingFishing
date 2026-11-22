@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.frostjaw_trout",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:frostjaw_trout",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:frostjaw_trout",
+      "title": "item.swingfishing.frostjaw_trout",
+      "text": "entry.swingfishing.frostjaw_trout.desc"
+    }
+  ]
+}

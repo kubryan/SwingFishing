@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.chorus_minnow",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:chorus_minnow",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:chorus_minnow",
+      "title": "item.swingfishing.chorus_minnow",
+      "text": "entry.swingfishing.chorus_minnow.desc"
+    }
+  ]
+}

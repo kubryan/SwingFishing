@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.blue_ice_pike",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:blue_ice_pike",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:blue_ice_pike",
+      "title": "item.swingfishing.blue_ice_pike",
+      "text": "entry.swingfishing.blue_ice_pike.desc"
+    }
+  ]
+}

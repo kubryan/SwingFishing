@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.luminous_shrimp",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:luminous_shrimp",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:luminous_shrimp",
+      "title": "item.swingfishing.luminous_shrimp",
+      "text": "entry.swingfishing.luminous_shrimp.desc"
+    }
+  ]
+}

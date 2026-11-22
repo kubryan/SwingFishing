@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.fossilized_angelfish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:fossilized_angelfish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:fossilized_angelfish",
+      "title": "item.swingfishing.fossilized_angelfish",
+      "text": "entry.swingfishing.fossilized_angelfish.desc"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.mirage_carp",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:mirage_carp",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:mirage_carp",
+      "title": "item.swingfishing.mirage_carp",
+      "text": "entry.swingfishing.mirage_carp.desc"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.aurora",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:aurora",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:aurora",
+      "title": "item.swingfishing.aurora",
+      "text": "entry.swingfishing.aurora.desc"
+    }
+  ]
+}

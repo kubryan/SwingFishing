@@ -1,0 +1,274 @@
+# Fish Image Catalog
+
+本檔案將魚的名稱、來源、類型與圖片路徑整理在一起，方便後續以 model/item 建立資料。圖片僅供本機私人參考；請保留各來源的授權檔。
+
+## 來源
+
+- [Starcatcher 1.21.1](https://github.com/wdiscute/starcatcher/tree/1.21.1)：程式碼與素材授權不同，素材請依來源的 `license` 使用。
+- [Fishing101 1.21.10](https://github.com/Macck209/Fishing101/tree/1.21.10)：MIT；使用時保留授權與著作權聲明。
+
+## 欄位說明
+
+`name` 是資源路徑名稱；`kind=entity` 可作為魚模型貼圖參考，`kind=item` 可作為物品圖示／item model 貼圖參考。`[圖片]` 連結指向整理後的複本。
+
+## Starcatcher
+
+| name | kind | image | source path |
+|---|---|---|---|
+| `agave_bream` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/agave_bream.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\agave_bream.png` |
+| `amethystback` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/amethystback.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\amethystback.png` |
+| `aquamarine_pike` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/aquamarine_pike.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\aquamarine_pike.png` |
+| `aurora` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/aurora.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\aurora.png` |
+| `azure_crystalback_minnow` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/azure_crystalback_minnow.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\azure_crystalback_minnow.png` |
+| `bigeye_tuna` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/bigeye_tuna.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\bigeye_tuna.png` |
+| `blossomfish` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/blossomfish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\blossomfish.png` |
+| `blue_crystal_fin` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/blue_crystal_fin.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\blue_crystal_fin.png` |
+| `blue_herring` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/blue_herring.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\blue_herring.png` |
+| `blue_ice_pike` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/blue_ice_pike.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\blue_ice_pike.png` |
+| `bluegigi` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/bluegigi.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\bluegigi.png` |
+| `boreal` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/boreal.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\boreal.png` |
+| `bright_amethyst_snapper` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/bright_amethyst_snapper.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\bright_amethyst_snapper.png` |
+| `cactifish` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/cactifish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\cactifish.png` |
+| `carpenjoe` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/carpenjoe.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\carpenjoe.png` |
+| `cerberay` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/cerberay.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\cerberay.png` |
+| `charfish` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/charfish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\charfish.png` |
+| `chorus_minnow` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/chorus_minnow.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\chorus_minnow.png` |
+| `cloudfin` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/cloudfin.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\cloudfin.png` |
+| `cryospine` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/cryospine.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\cryospine.png` |
+| `crystalback_boreal` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/crystalback_boreal.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\crystalback_boreal.png` |
+| `crystalback_minnow` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/crystalback_minnow.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\crystalback_minnow.png` |
+| `crystalback_sturgeon` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/crystalback_sturgeon.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\crystalback_sturgeon.png` |
+| `crystalback_trout` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/crystalback_trout.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\crystalback_trout.png` |
+| `dark_amethyst_snapper` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/dark_amethyst_snapper.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\dark_amethyst_snapper.png` |
+| `deepjaw_herring` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/deepjaw_herring.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\deepjaw_herring.png` |
+| `deepslatefish` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/deepslatefish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\deepslatefish.png` |
+| `downfall_bream` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/downfall_bream.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\downfall_bream.png` |
+| `dreamliner` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/dreamliner.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\dreamliner.png` |
+| `driftfin` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/driftfin.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\driftfin.png` |
+| `drifting_bream` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/drifting_bream.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\drifting_bream.png` |
+| `dripfin` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/dripfin.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\dripfin.png` |
+| `dusktail_snapper` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/dusktail_snapper.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\dusktail_snapper.png` |
+| `elderscale` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/elderscale.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\elderscale.png` |
+| `embergill` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/embergill.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\embergill.png` |
+| `end_glow` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/end_glow.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\end_glow.png` |
+| `fossilized_angelfish` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/fossilized_angelfish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\fossilized_angelfish.png` |
+| `frostgill_chub` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/frostgill_chub.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\frostgill_chub.png` |
+| `frostjaw_trout` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/frostjaw_trout.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\frostjaw_trout.png` |
+| `garnet_mackerel` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/garnet_mackerel.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\garnet_mackerel.png` |
+| `ghostly_pike` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/ghostly_pike.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\ghostly_pike.png` |
+| `glimmergill` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/glimmergill.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\glimmergill.png` |
+| `glowing_dark` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/glowing_dark.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\glowing_dark.png` |
+| `glowstone_pufferfish` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/glowstone_pufferfish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\glowstone_pufferfish.png` |
+| `glowstone_seeker` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/glowstone_seeker.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\glowstone_seeker.png` |
+| `gold_fan` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/gold_fan.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\gold_fan.png` |
+| `hollowbelly_darter` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/hollowbelly_darter.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\hollowbelly_darter.png` |
+| `icetooth_sturgeon` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/icetooth_sturgeon.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\icetooth_sturgeon.png` |
+| `ironjaw_herring` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/ironjaw_herring.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\ironjaw_herring.png` |
+| `joel` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/joel.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\joel.png` |
+| `lightning_bass` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/lightning_bass.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\lightning_bass.png` |
+| `lilac_minnow` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/lilac_minnow.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\lilac_minnow.png` |
+| `lily_snapper` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/lily_snapper.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\lily_snapper.png` |
+| `livid_bamboo` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/livid_bamboo.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\livid_bamboo.png` |
+| `lush_pike` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/lush_pike.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\lush_pike.png` |
+| `magma_fish` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/magma_fish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\magma_fish.png` |
+| `mirage_carp` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/mirage_carp.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\mirage_carp.png` |
+| `mistback_chub` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/mistback_chub.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\mistback_chub.png` |
+| `morganite` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/morganite.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\morganite.png` |
+| `mossfin` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/mossfin.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\mossfin.png` |
+| `mothfish` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/mothfish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\mothfish.png` |
+| `oasis_sturgeon` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/oasis_sturgeon.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\oasis_sturgeon.png` |
+| `obidontiee` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/obidontiee.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\obidontiee.png` |
+| `pale_carp` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/pale_carp.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\pale_carp.png` |
+| `pale_pinfish` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/pale_pinfish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\pale_pinfish.png` |
+| `peakdweller` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/peakdweller.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\peakdweller.png` |
+| `petal_bass` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/petal_bass.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\petal_bass.png` |
+| `petaldrift_carp` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/petaldrift_carp.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\petaldrift_carp.png` |
+| `pinfish` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/pinfish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\pinfish.png` |
+| `pink_koi` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/pink_koi.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\pink_koi.png` |
+| `purple_carp` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/purple_carp.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\purple_carp.png` |
+| `pyrotrout` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/pyrotrout.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\pyrotrout.png` |
+| `rainfin` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/rainfin.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\rainfin.png` |
+| `redscaled_tuna` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/redscaled_tuna.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\redscaled_tuna.png` |
+| `ripple_catfish` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/ripple_catfish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\ripple_catfish.png` |
+| `rockgill` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/rockgill.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\rockgill.png` |
+| `rose_siamese_fish` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/rose_siamese_fish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\rose_siamese_fish.png` |
+| `sage_catfish` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/sage_catfish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\sage_catfish.png` |
+| `sandtail` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/sandtail.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\sandtail.png` |
+| `scalding_pike` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/scalding_pike.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\scalding_pike.png` |
+| `scorchfish` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/scorchfish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\scorchfish.png` |
+| `sculk_ward` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/sculk_ward.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\sculk_ward.png` |
+| `sculkfish` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/sculkfish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\sculkfish.png` |
+| `sea_bass` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/sea_bass.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\sea_bass.png` |
+| `shadowfin` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/shadowfin.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\shadowfin.png` |
+| `shroomfish` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/shroomfish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\shroomfish.png` |
+| `silverfin_pike` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/silverfin_pike.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\silverfin_pike.png` |
+| `silverveil_perch` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/silverveil_perch.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\silverveil_perch.png` |
+| `sludge_catfish` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/sludge_catfish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\sludge_catfish.png` |
+| `sporefish` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/sporefish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\sporefish.png` |
+| `stonefish` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/stonefish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\stonefish.png` |
+| `sun_seeking_carp` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/sun_seeking_carp.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\sun_seeking_carp.png` |
+| `suneater` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/suneater.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\suneater.png` |
+| `sunflower_carp` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/sunflower_carp.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\sunflower_carp.png` |
+| `sunny_sturgeon` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/sunny_sturgeon.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\sunny_sturgeon.png` |
+| `the_quarrish` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/the_quarrish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\the_quarrish.png` |
+| `thunder_bass` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/thunder_bass.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\thunder_bass.png` |
+| `twilight_koi` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/twilight_koi.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\twilight_koi.png` |
+| `vesani` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/vesani.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\vesani.png` |
+| `vivid_moss` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/vivid_moss.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\vivid_moss.png` |
+| `voidbiter` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/voidbiter.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\voidbiter.png` |
+| `voidfin` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/voidfin.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\voidfin.png` |
+| `ward` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/ward.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\ward.png` |
+| `whiteveil` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/whiteveil.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\whiteveil.png` |
+| `willish` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/willish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\willish.png` |
+| `willow_bream` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/willow_bream.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\willow_bream.png` |
+| `wintery_pike` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/wintery_pike.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\wintery_pike.png` |
+| `yellowstone_fish` | `entity` | [圖片](圖片/fish-catalog/Starcatcher/entity/yellowstone_fish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\entity\fishes\yellowstone_fish.png` |
+| `agave_bream` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/agave_bream.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\agave_bream.png` |
+| `amethystback` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/amethystback.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\amethystback.png` |
+| `aquamarine_pike` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/aquamarine_pike.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\aquamarine_pike.png` |
+| `aurora` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/aurora.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\aurora.png` |
+| `azure_crystalback_minnow` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/azure_crystalback_minnow.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\azure_crystalback_minnow.png` |
+| `bigeye_tuna` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/bigeye_tuna.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\bigeye_tuna.png` |
+| `blossomfish` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/blossomfish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\blossomfish.png` |
+| `blue_crystal_fin` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/blue_crystal_fin.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\blue_crystal_fin.png` |
+| `blue_herring` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/blue_herring.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\blue_herring.png` |
+| `blue_ice_pike` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/blue_ice_pike.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\blue_ice_pike.png` |
+| `bluegigi` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/bluegigi.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\bluegigi.png` |
+| `boreal` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/boreal.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\boreal.png` |
+| `bright_amethyst_snapper` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/bright_amethyst_snapper.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\bright_amethyst_snapper.png` |
+| `cactifish` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/cactifish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\cactifish.png` |
+| `carpenjoe` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/carpenjoe.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\carpenjoe.png` |
+| `cerberay` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/cerberay.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\cerberay.png` |
+| `charfish` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/charfish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\charfish.png` |
+| `chorus_minnow` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/chorus_minnow.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\chorus_minnow.png` |
+| `cloudfin` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/cloudfin.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\cloudfin.png` |
+| `cryospine` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/cryospine.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\cryospine.png` |
+| `crystalback_boreal` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/crystalback_boreal.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\crystalback_boreal.png` |
+| `crystalback_minnow` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/crystalback_minnow.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\crystalback_minnow.png` |
+| `crystalback_sturgeon` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/crystalback_sturgeon.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\crystalback_sturgeon.png` |
+| `crystalback_trout` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/crystalback_trout.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\crystalback_trout.png` |
+| `dark_amethyst_snapper` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/dark_amethyst_snapper.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\dark_amethyst_snapper.png` |
+| `deepjaw_herring` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/deepjaw_herring.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\deepjaw_herring.png` |
+| `deepslatefish` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/deepslatefish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\deepslatefish.png` |
+| `downfall_bream` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/downfall_bream.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\downfall_bream.png` |
+| `dreamliner` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/dreamliner.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\dreamliner.png` |
+| `driftfin` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/driftfin.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\driftfin.png` |
+| `drifting_bream` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/drifting_bream.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\drifting_bream.png` |
+| `dripfin` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/dripfin.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\dripfin.png` |
+| `dusktail_snapper` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/dusktail_snapper.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\dusktail_snapper.png` |
+| `elderscale` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/elderscale.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\elderscale.png` |
+| `embergill` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/embergill.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\embergill.png` |
+| `end_glow` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/end_glow.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\end_glow.png` |
+| `fossilized_angelfish` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/fossilized_angelfish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\fossilized_angelfish.png` |
+| `frostgill_chub` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/frostgill_chub.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\frostgill_chub.png` |
+| `frostjaw_trout` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/frostjaw_trout.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\frostjaw_trout.png` |
+| `garnet_mackerel` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/garnet_mackerel.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\garnet_mackerel.png` |
+| `ghostly_pike` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/ghostly_pike.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\ghostly_pike.png` |
+| `glimmergill` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/glimmergill.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\glimmergill.png` |
+| `glowing_dark` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/glowing_dark.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\glowing_dark.png` |
+| `glowstone_pufferfish` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/glowstone_pufferfish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\glowstone_pufferfish.png` |
+| `glowstone_seeker` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/glowstone_seeker.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\glowstone_seeker.png` |
+| `gold_fan` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/gold_fan.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\gold_fan.png` |
+| `hollowbelly_darter` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/hollowbelly_darter.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\hollowbelly_darter.png` |
+| `icetooth_sturgeon` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/icetooth_sturgeon.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\icetooth_sturgeon.png` |
+| `ironjaw_herring` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/ironjaw_herring.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\ironjaw_herring.png` |
+| `joel` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/joel.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\joel.png` |
+| `lightning_bass` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/lightning_bass.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\lightning_bass.png` |
+| `lilac_minnow` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/lilac_minnow.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\lilac_minnow.png` |
+| `lily_snapper` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/lily_snapper.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\lily_snapper.png` |
+| `livid_bamboo` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/livid_bamboo.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\livid_bamboo.png` |
+| `lush_pike` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/lush_pike.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\lush_pike.png` |
+| `magma_fish` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/magma_fish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\magma_fish.png` |
+| `mirage_carp` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/mirage_carp.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\mirage_carp.png` |
+| `mistback_chub` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/mistback_chub.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\mistback_chub.png` |
+| `morganite` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/morganite.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\morganite.png` |
+| `mossfin` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/mossfin.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\mossfin.png` |
+| `mothfish` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/mothfish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\mothfish.png` |
+| `oasis_sturgeon` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/oasis_sturgeon.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\oasis_sturgeon.png` |
+| `obidontiee` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/obidontiee.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\obidontiee.png` |
+| `pale_carp` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/pale_carp.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\pale_carp.png` |
+| `pale_pinfish` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/pale_pinfish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\pale_pinfish.png` |
+| `peakdweller` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/peakdweller.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\peakdweller.png` |
+| `petal_bass` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/petal_bass.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\petal_bass.png` |
+| `petaldrift_carp` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/petaldrift_carp.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\petaldrift_carp.png` |
+| `pinfish` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/pinfish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\pinfish.png` |
+| `pink_koi` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/pink_koi.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\pink_koi.png` |
+| `purple_carp` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/purple_carp.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\purple_carp.png` |
+| `pyrotrout` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/pyrotrout.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\pyrotrout.png` |
+| `rainfin` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/rainfin.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\rainfin.png` |
+| `redscaled_tuna` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/redscaled_tuna.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\redscaled_tuna.png` |
+| `ripple_catfish` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/ripple_catfish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\ripple_catfish.png` |
+| `rockgill` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/rockgill.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\rockgill.png` |
+| `rose_siamese_fish` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/rose_siamese_fish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\rose_siamese_fish.png` |
+| `sage_catfish` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/sage_catfish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\sage_catfish.png` |
+| `sandtail` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/sandtail.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\sandtail.png` |
+| `scalding_pike` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/scalding_pike.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\scalding_pike.png` |
+| `scorchfish` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/scorchfish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\scorchfish.png` |
+| `sculkfish` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/sculkfish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\sculkfish.png` |
+| `sea_bass` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/sea_bass.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\sea_bass.png` |
+| `shadowfin` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/shadowfin.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\shadowfin.png` |
+| `shroomfish` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/shroomfish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\shroomfish.png` |
+| `silverfin_pike` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/silverfin_pike.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\silverfin_pike.png` |
+| `silverveil_perch` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/silverveil_perch.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\silverveil_perch.png` |
+| `sludge_catfish` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/sludge_catfish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\sludge_catfish.png` |
+| `sporefish` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/sporefish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\sporefish.png` |
+| `stonefish` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/stonefish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\stonefish.png` |
+| `sun_seeking_carp` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/sun_seeking_carp.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\sun_seeking_carp.png` |
+| `suneater` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/suneater.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\suneater.png` |
+| `sunflower_carp` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/sunflower_carp.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\sunflower_carp.png` |
+| `sunny_sturgeon` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/sunny_sturgeon.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\sunny_sturgeon.png` |
+| `the_quarrish` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/the_quarrish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\the_quarrish.png` |
+| `thunder_bass` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/thunder_bass.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\thunder_bass.png` |
+| `twilight_koi` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/twilight_koi.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\twilight_koi.png` |
+| `vesani` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/vesani.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\vesani.png` |
+| `vivid_moss` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/vivid_moss.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\vivid_moss.png` |
+| `voidbiter` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/voidbiter.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\voidbiter.png` |
+| `voidfin` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/voidfin.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\voidfin.png` |
+| `ward` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/ward.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\ward.png` |
+| `whiteveil` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/whiteveil.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\whiteveil.png` |
+| `willish` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/willish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\willish.png` |
+| `willow_bream` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/willow_bream.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\willow_bream.png` |
+| `wintery_pike` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/wintery_pike.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\wintery_pike.png` |
+| `yellowstone_fish` | `item` | [圖片](圖片/fish-catalog/Starcatcher/item/yellowstone_fish.png) | `圖片\starcatcher-1.21.1\src\main\resources\assets\starcatcher\textures\item\yellowstone_fish.png` |
+
+## Fishing101
+
+| name | kind | image | source path |
+|---|---|---|---|
+| `anglerfish` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/anglerfish.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\anglerfish.png` |
+| `charged_thunderfin` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/charged_thunderfin.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\charged_thunderfin.png` |
+| `deformed_carp` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/deformed_carp.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\deformed_carp.png` |
+| `divine_catfish` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/divine_catfish.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\divine_catfish.png` |
+| `divine_jellyfish` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/divine_jellyfish.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\divine_jellyfish.png` |
+| `eel` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/eel.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\eel.png` |
+| `end_jellyfish` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/end_jellyfish.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\end_jellyfish.png` |
+| `end_starfish` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/end_starfish.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\end_starfish.png` |
+| `end_starfish_shashlik` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/end_starfish_shashlik.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\end_starfish_shashlik.png` |
+| `fish_bones` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/fish_bones.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\fish_bones.png` |
+| `fish_book` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/fish_book.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\fish_book.png` |
+| `flowerfish` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/flowerfish.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\flowerfish.png` |
+| `ice_cod` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/ice_cod.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\ice_cod.png` |
+| `jellyfish` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/jellyfish.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\jellyfish.png` |
+| `luminous_carp` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/luminous_carp.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\luminous_carp.png` |
+| `luminous_mackerel` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/luminous_mackerel.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\luminous_mackerel.png` |
+| `luminous_shrimp` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/luminous_shrimp.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\luminous_shrimp.png` |
+| `mangrove_jack` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/mangrove_jack.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\mangrove_jack.png` |
+| `muddy_catfish` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/muddy_catfish.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\muddy_catfish.png` |
+| `ordinary_carp` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/ordinary_carp.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\ordinary_carp.png` |
+| `ordinary_catfish` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/ordinary_catfish.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\ordinary_catfish.png` |
+| `ordinary_mackerel` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/ordinary_mackerel.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\ordinary_mackerel.png` |
+| `ordinary_shrimp` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/ordinary_shrimp.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\ordinary_shrimp.png` |
+| `pandafish` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/pandafish.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\pandafish.png` |
+| `red_koi` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/red_koi.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\red_koi.png` |
+| `solarfish` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/solarfish.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\solarfish.png` |
+| `starfish` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/starfish.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\starfish.png` |
+| `starfish_shashlik` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/starfish_shashlik.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\starfish_shashlik.png` |
+| `tentacle` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/tentacle.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\tentacle.png` |
+| `thunderfin` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/thunderfin.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\thunderfin.png` |
+| `tropical_catfish` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/tropical_catfish.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\tropical_catfish.png` |
+| `witchfish` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/witchfish.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\witchfish.png` |
+| `yellow_koi` | `item` | [圖片](圖片/fish-catalog/Fishing101/item/yellow_koi.png) | `圖片\Fishing101-1.21.10\src\main\resources\assets\fishing101\textures\item\yellow_koi.png` |
+
+## 重複圖片
+
+未刪除任何原始檔案。以 SHA-256 比對出的重複檔案複本放在 `圖片/duplicates`；如需清理，請先人工確認授權與用途。

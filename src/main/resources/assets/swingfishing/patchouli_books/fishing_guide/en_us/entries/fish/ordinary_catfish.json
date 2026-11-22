@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.ordinary_catfish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:ordinary_catfish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:ordinary_catfish",
+      "title": "item.swingfishing.ordinary_catfish",
+      "text": "entry.swingfishing.ordinary_catfish.desc"
+    }
+  ]
+}

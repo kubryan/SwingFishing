@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.pale_pinfish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:pale_pinfish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:pale_pinfish",
+      "title": "item.swingfishing.pale_pinfish",
+      "text": "entry.swingfishing.pale_pinfish.desc"
+    }
+  ]
+}

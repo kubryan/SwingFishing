@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.scorchfish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:scorchfish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:scorchfish",
+      "title": "item.swingfishing.scorchfish",
+      "text": "entry.swingfishing.scorchfish.desc"
+    }
+  ]
+}

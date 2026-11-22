@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.fish_bones",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:fish_bones",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:fish_bones",
+      "title": "item.swingfishing.fish_bones",
+      "text": "entry.swingfishing.fish_bones.desc"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.bigeye_tuna",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:bigeye_tuna",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:bigeye_tuna",
+      "title": "item.swingfishing.bigeye_tuna",
+      "text": "entry.swingfishing.bigeye_tuna.desc"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.suneater",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:suneater",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:suneater",
+      "title": "item.swingfishing.suneater",
+      "text": "entry.swingfishing.suneater.desc"
+    }
+  ]
+}

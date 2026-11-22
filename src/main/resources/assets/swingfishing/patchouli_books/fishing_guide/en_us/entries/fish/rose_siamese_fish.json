@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.rose_siamese_fish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:rose_siamese_fish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:rose_siamese_fish",
+      "title": "item.swingfishing.rose_siamese_fish",
+      "text": "entry.swingfishing.rose_siamese_fish.desc"
+    }
+  ]
+}

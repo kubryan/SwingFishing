@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.rainfin",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:rainfin",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:rainfin",
+      "title": "item.swingfishing.rainfin",
+      "text": "entry.swingfishing.rainfin.desc"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.bright_amethyst_snapper",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:bright_amethyst_snapper",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:bright_amethyst_snapper",
+      "title": "item.swingfishing.bright_amethyst_snapper",
+      "text": "entry.swingfishing.bright_amethyst_snapper.desc"
+    }
+  ]
+}

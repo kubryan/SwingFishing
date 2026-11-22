@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.cryospine",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:cryospine",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:cryospine",
+      "title": "item.swingfishing.cryospine",
+      "text": "entry.swingfishing.cryospine.desc"
+    }
+  ]
+}

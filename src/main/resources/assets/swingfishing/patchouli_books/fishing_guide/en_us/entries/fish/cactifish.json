@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.cactifish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:cactifish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:cactifish",
+      "title": "item.swingfishing.cactifish",
+      "text": "entry.swingfishing.cactifish.desc"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.mistback_chub",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:mistback_chub",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:mistback_chub",
+      "title": "item.swingfishing.mistback_chub",
+      "text": "entry.swingfishing.mistback_chub.desc"
+    }
+  ]
+}

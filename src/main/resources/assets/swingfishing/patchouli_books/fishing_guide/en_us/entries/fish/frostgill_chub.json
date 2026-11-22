@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.frostgill_chub",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:frostgill_chub",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:frostgill_chub",
+      "title": "item.swingfishing.frostgill_chub",
+      "text": "entry.swingfishing.frostgill_chub.desc"
+    }
+  ]
+}

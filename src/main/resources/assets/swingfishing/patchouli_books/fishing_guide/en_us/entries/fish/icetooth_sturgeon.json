@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.icetooth_sturgeon",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:icetooth_sturgeon",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:icetooth_sturgeon",
+      "title": "item.swingfishing.icetooth_sturgeon",
+      "text": "entry.swingfishing.icetooth_sturgeon.desc"
+    }
+  ]
+}

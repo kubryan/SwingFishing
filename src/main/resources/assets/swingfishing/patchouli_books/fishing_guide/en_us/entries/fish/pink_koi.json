@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.pink_koi",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:pink_koi",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:pink_koi",
+      "title": "item.swingfishing.pink_koi",
+      "text": "entry.swingfishing.pink_koi.desc"
+    }
+  ]
+}

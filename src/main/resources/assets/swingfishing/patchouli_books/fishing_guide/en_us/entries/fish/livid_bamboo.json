@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.livid_bamboo",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:livid_bamboo",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:livid_bamboo",
+      "title": "item.swingfishing.livid_bamboo",
+      "text": "entry.swingfishing.livid_bamboo.desc"
+    }
+  ]
+}

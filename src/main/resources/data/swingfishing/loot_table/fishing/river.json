@@ -1,0 +1,336 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:gameplay/fishing/treasure",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:gameplay/fishing/junk",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:agave_bream",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:aquamarine_pike",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:azure_crystalback_minnow",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:blue_crystal_fin",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:blue_ice_pike",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:carpenjoe",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:charged_thunderfin",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:chorus_minnow",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:cloudfin",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:crystalback_minnow",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:crystalback_sturgeon",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:crystalback_trout",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:deformed_carp",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:divine_catfish",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:downfall_bream",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:driftfin",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:drifting_bream",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:dripfin",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:eel",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:frostgill_chub",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:frostjaw_trout",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:ghostly_pike",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:glimmergill",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:hollowbelly_darter",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:icetooth_sturgeon",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:lightning_bass",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:lilac_minnow",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:luminous_carp",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:lush_pike",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:mirage_carp",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:mossfin",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:muddy_catfish",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:oasis_sturgeon",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:ordinary_carp",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:ordinary_catfish",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:pale_carp",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:petal_bass",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:petaldrift_carp",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:pink_koi",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:purple_carp",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:pyrotrout",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:rainfin",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:red_koi",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:ripple_catfish",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:rockgill",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:sage_catfish",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:scalding_pike",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:sea_bass",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:shadowfin",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:silverfin_pike",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:silverveil_perch",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:sludge_catfish",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:sun_seeking_carp",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:sunflower_carp",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:sunny_sturgeon",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:thunder_bass",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:thunderfin",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:tropical_catfish",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:twilight_koi",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:vivid_moss",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:willow_bream",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:wintery_pike",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:yellow_koi",
+          "weight": 10
+        }
+      ]
+    }
+  ]
+}

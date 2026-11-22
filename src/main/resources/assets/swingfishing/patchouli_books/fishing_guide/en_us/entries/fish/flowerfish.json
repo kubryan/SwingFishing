@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.flowerfish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:flowerfish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:flowerfish",
+      "title": "item.swingfishing.flowerfish",
+      "text": "entry.swingfishing.flowerfish.desc"
+    }
+  ]
+}

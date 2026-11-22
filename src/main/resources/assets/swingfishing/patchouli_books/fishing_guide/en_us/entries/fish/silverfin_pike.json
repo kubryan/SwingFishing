@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.silverfin_pike",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:silverfin_pike",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:silverfin_pike",
+      "title": "item.swingfishing.silverfin_pike",
+      "text": "entry.swingfishing.silverfin_pike.desc"
+    }
+  ]
+}

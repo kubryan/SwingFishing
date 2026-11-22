@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.peakdweller",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:peakdweller",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:peakdweller",
+      "title": "item.swingfishing.peakdweller",
+      "text": "entry.swingfishing.peakdweller.desc"
+    }
+  ]
+}

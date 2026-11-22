@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.sculk_ward",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:sculk_ward",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:sculk_ward",
+      "title": "item.swingfishing.sculk_ward",
+      "text": "entry.swingfishing.sculk_ward.desc"
+    }
+  ]
+}

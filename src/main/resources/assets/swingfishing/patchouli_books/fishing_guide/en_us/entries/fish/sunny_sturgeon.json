@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.sunny_sturgeon",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:sunny_sturgeon",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:sunny_sturgeon",
+      "title": "item.swingfishing.sunny_sturgeon",
+      "text": "entry.swingfishing.sunny_sturgeon.desc"
+    }
+  ]
+}

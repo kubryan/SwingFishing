@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.dripfin",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:dripfin",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:dripfin",
+      "title": "item.swingfishing.dripfin",
+      "text": "entry.swingfishing.dripfin.desc"
+    }
+  ]
+}

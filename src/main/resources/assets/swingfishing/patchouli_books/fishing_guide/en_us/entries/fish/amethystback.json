@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.amethystback",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:amethystback",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:amethystback",
+      "title": "item.swingfishing.amethystback",
+      "text": "entry.swingfishing.amethystback.desc"
+    }
+  ]
+}

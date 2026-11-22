@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.dreamliner",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:dreamliner",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:dreamliner",
+      "title": "item.swingfishing.dreamliner",
+      "text": "entry.swingfishing.dreamliner.desc"
+    }
+  ]
+}

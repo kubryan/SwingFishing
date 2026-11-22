@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.sunflower_carp",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:sunflower_carp",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:sunflower_carp",
+      "title": "item.swingfishing.sunflower_carp",
+      "text": "entry.swingfishing.sunflower_carp.desc"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.pyrotrout",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:pyrotrout",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:pyrotrout",
+      "title": "item.swingfishing.pyrotrout",
+      "text": "entry.swingfishing.pyrotrout.desc"
+    }
+  ]
+}

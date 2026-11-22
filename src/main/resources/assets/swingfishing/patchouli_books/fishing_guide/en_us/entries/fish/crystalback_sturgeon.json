@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.crystalback_sturgeon",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:crystalback_sturgeon",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:crystalback_sturgeon",
+      "title": "item.swingfishing.crystalback_sturgeon",
+      "text": "entry.swingfishing.crystalback_sturgeon.desc"
+    }
+  ]
+}

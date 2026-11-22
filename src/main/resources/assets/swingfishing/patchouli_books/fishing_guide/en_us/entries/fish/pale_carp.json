@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.pale_carp",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:pale_carp",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:pale_carp",
+      "title": "item.swingfishing.pale_carp",
+      "text": "entry.swingfishing.pale_carp.desc"
+    }
+  ]
+}

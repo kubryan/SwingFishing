@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.shroomfish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:shroomfish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:shroomfish",
+      "title": "item.swingfishing.shroomfish",
+      "text": "entry.swingfishing.shroomfish.desc"
+    }
+  ]
+}

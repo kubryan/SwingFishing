@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.lush_pike",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:lush_pike",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:lush_pike",
+      "title": "item.swingfishing.lush_pike",
+      "text": "entry.swingfishing.lush_pike.desc"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.petal_bass",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:petal_bass",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:petal_bass",
+      "title": "item.swingfishing.petal_bass",
+      "text": "entry.swingfishing.petal_bass.desc"
+    }
+  ]
+}

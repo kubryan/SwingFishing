@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.dusktail_snapper",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:dusktail_snapper",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:dusktail_snapper",
+      "title": "item.swingfishing.dusktail_snapper",
+      "text": "entry.swingfishing.dusktail_snapper.desc"
+    }
+  ]
+}

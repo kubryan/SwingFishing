@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.joel",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:joel",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:joel",
+      "title": "item.swingfishing.joel",
+      "text": "entry.swingfishing.joel.desc"
+    }
+  ]
+}

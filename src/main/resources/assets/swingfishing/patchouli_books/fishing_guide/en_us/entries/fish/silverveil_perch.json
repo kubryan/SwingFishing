@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.silverveil_perch",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:silverveil_perch",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:silverveil_perch",
+      "title": "item.swingfishing.silverveil_perch",
+      "text": "entry.swingfishing.silverveil_perch.desc"
+    }
+  ]
+}

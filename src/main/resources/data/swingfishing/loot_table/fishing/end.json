@@ -1,0 +1,76 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:gameplay/fishing/treasure",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:gameplay/fishing/junk",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:aurora",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:elderscale",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:end_glow",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:end_jellyfish",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:end_starfish",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:end_starfish_shashlik",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:suneater",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:vesani",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:voidbiter",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:voidfin",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:ward",
+          "weight": 10
+        }
+      ]
+    }
+  ]
+}

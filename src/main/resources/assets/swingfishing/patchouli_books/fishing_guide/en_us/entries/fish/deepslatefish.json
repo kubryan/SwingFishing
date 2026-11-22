@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.deepslatefish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:deepslatefish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:deepslatefish",
+      "title": "item.swingfishing.deepslatefish",
+      "text": "entry.swingfishing.deepslatefish.desc"
+    }
+  ]
+}

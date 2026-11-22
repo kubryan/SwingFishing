@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.obidontiee",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:obidontiee",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:obidontiee",
+      "title": "item.swingfishing.obidontiee",
+      "text": "entry.swingfishing.obidontiee.desc"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.tropical_catfish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:tropical_catfish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:tropical_catfish",
+      "title": "item.swingfishing.tropical_catfish",
+      "text": "entry.swingfishing.tropical_catfish.desc"
+    }
+  ]
+}

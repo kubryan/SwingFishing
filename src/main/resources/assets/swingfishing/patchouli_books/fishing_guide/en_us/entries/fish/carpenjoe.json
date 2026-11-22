@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.carpenjoe",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:carpenjoe",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:carpenjoe",
+      "title": "item.swingfishing.carpenjoe",
+      "text": "entry.swingfishing.carpenjoe.desc"
+    }
+  ]
+}

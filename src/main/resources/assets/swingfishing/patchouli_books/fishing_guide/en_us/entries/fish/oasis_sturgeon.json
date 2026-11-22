@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.oasis_sturgeon",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:oasis_sturgeon",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:oasis_sturgeon",
+      "title": "item.swingfishing.oasis_sturgeon",
+      "text": "entry.swingfishing.oasis_sturgeon.desc"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.ironjaw_herring",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:ironjaw_herring",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:ironjaw_herring",
+      "title": "item.swingfishing.ironjaw_herring",
+      "text": "entry.swingfishing.ironjaw_herring.desc"
+    }
+  ]
+}

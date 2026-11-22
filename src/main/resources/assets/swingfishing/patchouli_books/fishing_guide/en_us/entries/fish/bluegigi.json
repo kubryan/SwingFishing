@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.bluegigi",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:bluegigi",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:bluegigi",
+      "title": "item.swingfishing.bluegigi",
+      "text": "entry.swingfishing.bluegigi.desc"
+    }
+  ]
+}

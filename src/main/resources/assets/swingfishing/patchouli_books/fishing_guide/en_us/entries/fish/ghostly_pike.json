@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.ghostly_pike",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:ghostly_pike",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:ghostly_pike",
+      "title": "item.swingfishing.ghostly_pike",
+      "text": "entry.swingfishing.ghostly_pike.desc"
+    }
+  ]
+}

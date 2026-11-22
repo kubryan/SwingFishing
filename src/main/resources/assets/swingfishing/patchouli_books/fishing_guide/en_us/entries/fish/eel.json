@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.eel",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:eel",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:eel",
+      "title": "item.swingfishing.eel",
+      "text": "entry.swingfishing.eel.desc"
+    }
+  ]
+}

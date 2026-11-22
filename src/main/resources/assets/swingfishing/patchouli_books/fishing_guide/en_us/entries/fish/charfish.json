@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.charfish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:charfish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:charfish",
+      "title": "item.swingfishing.charfish",
+      "text": "entry.swingfishing.charfish.desc"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.sea_bass",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:sea_bass",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:sea_bass",
+      "title": "item.swingfishing.sea_bass",
+      "text": "entry.swingfishing.sea_bass.desc"
+    }
+  ]
+}

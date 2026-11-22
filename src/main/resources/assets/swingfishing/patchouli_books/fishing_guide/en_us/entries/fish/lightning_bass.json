@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.lightning_bass",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:lightning_bass",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:lightning_bass",
+      "title": "item.swingfishing.lightning_bass",
+      "text": "entry.swingfishing.lightning_bass.desc"
+    }
+  ]
+}

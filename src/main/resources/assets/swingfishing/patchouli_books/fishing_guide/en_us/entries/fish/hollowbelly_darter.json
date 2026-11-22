@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.hollowbelly_darter",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:hollowbelly_darter",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:hollowbelly_darter",
+      "title": "item.swingfishing.hollowbelly_darter",
+      "text": "entry.swingfishing.hollowbelly_darter.desc"
+    }
+  ]
+}

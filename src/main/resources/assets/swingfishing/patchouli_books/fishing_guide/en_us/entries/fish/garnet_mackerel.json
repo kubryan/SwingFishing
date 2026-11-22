@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.garnet_mackerel",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:garnet_mackerel",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:garnet_mackerel",
+      "title": "item.swingfishing.garnet_mackerel",
+      "text": "entry.swingfishing.garnet_mackerel.desc"
+    }
+  ]
+}

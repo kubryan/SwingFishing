@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.whiteveil",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:whiteveil",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:whiteveil",
+      "title": "item.swingfishing.whiteveil",
+      "text": "entry.swingfishing.whiteveil.desc"
+    }
+  ]
+}

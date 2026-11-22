@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.petaldrift_carp",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:petaldrift_carp",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:petaldrift_carp",
+      "title": "item.swingfishing.petaldrift_carp",
+      "text": "entry.swingfishing.petaldrift_carp.desc"
+    }
+  ]
+}

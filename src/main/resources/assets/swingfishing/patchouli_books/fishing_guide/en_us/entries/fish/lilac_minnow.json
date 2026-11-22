@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.lilac_minnow",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:lilac_minnow",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:lilac_minnow",
+      "title": "item.swingfishing.lilac_minnow",
+      "text": "entry.swingfishing.lilac_minnow.desc"
+    }
+  ]
+}

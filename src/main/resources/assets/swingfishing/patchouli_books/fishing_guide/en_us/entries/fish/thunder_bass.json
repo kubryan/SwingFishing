@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.thunder_bass",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:thunder_bass",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:thunder_bass",
+      "title": "item.swingfishing.thunder_bass",
+      "text": "entry.swingfishing.thunder_bass.desc"
+    }
+  ]
+}

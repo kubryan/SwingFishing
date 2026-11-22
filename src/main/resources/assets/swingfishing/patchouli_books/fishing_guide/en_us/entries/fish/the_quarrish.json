@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.the_quarrish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:the_quarrish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:the_quarrish",
+      "title": "item.swingfishing.the_quarrish",
+      "text": "entry.swingfishing.the_quarrish.desc"
+    }
+  ]
+}

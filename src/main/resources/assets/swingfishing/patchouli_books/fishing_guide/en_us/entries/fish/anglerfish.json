@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.anglerfish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:anglerfish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:anglerfish",
+      "title": "item.swingfishing.anglerfish",
+      "text": "entry.swingfishing.anglerfish.desc"
+    }
+  ]
+}

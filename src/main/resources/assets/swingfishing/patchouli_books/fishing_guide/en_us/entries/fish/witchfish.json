@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.witchfish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:witchfish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:witchfish",
+      "title": "item.swingfishing.witchfish",
+      "text": "entry.swingfishing.witchfish.desc"
+    }
+  ]
+}

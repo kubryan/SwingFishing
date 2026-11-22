@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.blossomfish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:blossomfish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:blossomfish",
+      "title": "item.swingfishing.blossomfish",
+      "text": "entry.swingfishing.blossomfish.desc"
+    }
+  ]
+}

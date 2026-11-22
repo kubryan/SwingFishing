@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.gold_fan",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:gold_fan",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:gold_fan",
+      "title": "item.swingfishing.gold_fan",
+      "text": "entry.swingfishing.gold_fan.desc"
+    }
+  ]
+}

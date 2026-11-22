@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.elderscale",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:elderscale",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:elderscale",
+      "title": "item.swingfishing.elderscale",
+      "text": "entry.swingfishing.elderscale.desc"
+    }
+  ]
+}

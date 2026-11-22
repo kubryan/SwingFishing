@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.scalding_pike",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:scalding_pike",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:scalding_pike",
+      "title": "item.swingfishing.scalding_pike",
+      "text": "entry.swingfishing.scalding_pike.desc"
+    }
+  ]
+}

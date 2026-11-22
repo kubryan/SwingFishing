@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.sandtail",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:sandtail",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:sandtail",
+      "title": "item.swingfishing.sandtail",
+      "text": "entry.swingfishing.sandtail.desc"
+    }
+  ]
+}

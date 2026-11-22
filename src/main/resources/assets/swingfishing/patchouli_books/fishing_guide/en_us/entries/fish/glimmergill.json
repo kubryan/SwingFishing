@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.glimmergill",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:glimmergill",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:glimmergill",
+      "title": "item.swingfishing.glimmergill",
+      "text": "entry.swingfishing.glimmergill.desc"
+    }
+  ]
+}

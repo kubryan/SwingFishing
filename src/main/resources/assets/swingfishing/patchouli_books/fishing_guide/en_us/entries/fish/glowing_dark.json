@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.glowing_dark",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:glowing_dark",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:glowing_dark",
+      "title": "item.swingfishing.glowing_dark",
+      "text": "entry.swingfishing.glowing_dark.desc"
+    }
+  ]
+}

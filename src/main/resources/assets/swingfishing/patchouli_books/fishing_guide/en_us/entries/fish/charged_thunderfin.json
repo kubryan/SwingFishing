@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.charged_thunderfin",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:charged_thunderfin",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:charged_thunderfin",
+      "title": "item.swingfishing.charged_thunderfin",
+      "text": "entry.swingfishing.charged_thunderfin.desc"
+    }
+  ]
+}

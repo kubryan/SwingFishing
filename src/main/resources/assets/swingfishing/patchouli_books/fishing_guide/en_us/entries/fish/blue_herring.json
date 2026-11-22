@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.blue_herring",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:blue_herring",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:blue_herring",
+      "title": "item.swingfishing.blue_herring",
+      "text": "entry.swingfishing.blue_herring.desc"
+    }
+  ]
+}

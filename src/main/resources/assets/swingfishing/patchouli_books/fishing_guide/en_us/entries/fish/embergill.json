@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.embergill",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:embergill",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:embergill",
+      "title": "item.swingfishing.embergill",
+      "text": "entry.swingfishing.embergill.desc"
+    }
+  ]
+}

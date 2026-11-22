@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.rockgill",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:rockgill",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:rockgill",
+      "title": "item.swingfishing.rockgill",
+      "text": "entry.swingfishing.rockgill.desc"
+    }
+  ]
+}

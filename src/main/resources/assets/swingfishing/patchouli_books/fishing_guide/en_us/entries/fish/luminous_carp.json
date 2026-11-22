@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.luminous_carp",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:luminous_carp",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:luminous_carp",
+      "title": "item.swingfishing.luminous_carp",
+      "text": "entry.swingfishing.luminous_carp.desc"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.downfall_bream",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:downfall_bream",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:downfall_bream",
+      "title": "item.swingfishing.downfall_bream",
+      "text": "entry.swingfishing.downfall_bream.desc"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.tentacle",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:tentacle",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:tentacle",
+      "title": "item.swingfishing.tentacle",
+      "text": "entry.swingfishing.tentacle.desc"
+    }
+  ]
+}

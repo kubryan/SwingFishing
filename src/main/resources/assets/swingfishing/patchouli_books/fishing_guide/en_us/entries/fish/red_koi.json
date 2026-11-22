@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.red_koi",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:red_koi",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:red_koi",
+      "title": "item.swingfishing.red_koi",
+      "text": "entry.swingfishing.red_koi.desc"
+    }
+  ]
+}

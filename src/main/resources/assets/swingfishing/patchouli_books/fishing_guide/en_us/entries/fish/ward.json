@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.ward",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:ward",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:ward",
+      "title": "item.swingfishing.ward",
+      "text": "entry.swingfishing.ward.desc"
+    }
+  ]
+}

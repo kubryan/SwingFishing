@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.stonefish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:stonefish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:stonefish",
+      "title": "item.swingfishing.stonefish",
+      "text": "entry.swingfishing.stonefish.desc"
+    }
+  ]
+}

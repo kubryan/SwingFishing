@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.vivid_moss",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:vivid_moss",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:vivid_moss",
+      "title": "item.swingfishing.vivid_moss",
+      "text": "entry.swingfishing.vivid_moss.desc"
+    }
+  ]
+}

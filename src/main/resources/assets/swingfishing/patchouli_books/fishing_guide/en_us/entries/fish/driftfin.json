@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.driftfin",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:driftfin",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:driftfin",
+      "title": "item.swingfishing.driftfin",
+      "text": "entry.swingfishing.driftfin.desc"
+    }
+  ]
+}

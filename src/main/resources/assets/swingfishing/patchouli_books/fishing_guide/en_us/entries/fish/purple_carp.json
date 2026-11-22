@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.purple_carp",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:purple_carp",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:purple_carp",
+      "title": "item.swingfishing.purple_carp",
+      "text": "entry.swingfishing.purple_carp.desc"
+    }
+  ]
+}

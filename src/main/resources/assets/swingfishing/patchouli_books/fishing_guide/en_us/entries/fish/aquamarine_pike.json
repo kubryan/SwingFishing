@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.aquamarine_pike",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:aquamarine_pike",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:aquamarine_pike",
+      "title": "item.swingfishing.aquamarine_pike",
+      "text": "entry.swingfishing.aquamarine_pike.desc"
+    }
+  ]
+}

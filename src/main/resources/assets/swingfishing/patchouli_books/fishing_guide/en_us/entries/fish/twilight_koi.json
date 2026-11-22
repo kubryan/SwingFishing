@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.twilight_koi",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:twilight_koi",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:twilight_koi",
+      "title": "item.swingfishing.twilight_koi",
+      "text": "entry.swingfishing.twilight_koi.desc"
+    }
+  ]
+}

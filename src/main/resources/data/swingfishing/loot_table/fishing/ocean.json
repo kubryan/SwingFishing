@@ -1,0 +1,301 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:gameplay/fishing/treasure",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:gameplay/fishing/junk",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:amethystback",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:anglerfish",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:bigeye_tuna",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:blossomfish",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:blue_herring",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:bluegigi",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:boreal",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:bright_amethyst_snapper",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:cactifish",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:cerberay",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:charfish",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:cryospine",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:crystalback_boreal",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:dark_amethyst_snapper",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:deepjaw_herring",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:divine_jellyfish",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:dreamliner",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:dusktail_snapper",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:fish_bones",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:flowerfish",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:garnet_mackerel",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:gold_fan",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:ice_cod",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:ironjaw_herring",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:jellyfish",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:joel",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:lily_snapper",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:livid_bamboo",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:luminous_mackerel",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:luminous_shrimp",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:mangrove_jack",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:mistback_chub",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:morganite",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:mothfish",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:obidontiee",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:ordinary_mackerel",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:ordinary_shrimp",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:pale_pinfish",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:pandafish",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:peakdweller",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:pinfish",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:redscaled_tuna",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:rose_siamese_fish",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:sandtail",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:shroomfish",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:solarfish",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:sporefish",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:starfish",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:starfish_shashlik",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:stonefish",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:tentacle",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:the_quarrish",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:whiteveil",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:willish",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:witchfish",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "swingfishing:yellowstone_fish",
+          "weight": 10
+        }
+      ]
+    }
+  ]
+}

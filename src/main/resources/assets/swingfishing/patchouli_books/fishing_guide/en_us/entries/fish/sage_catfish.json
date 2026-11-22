@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.sage_catfish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:sage_catfish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:sage_catfish",
+      "title": "item.swingfishing.sage_catfish",
+      "text": "entry.swingfishing.sage_catfish.desc"
+    }
+  ]
+}

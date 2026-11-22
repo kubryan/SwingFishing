@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.yellowstone_fish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:yellowstone_fish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:yellowstone_fish",
+      "title": "item.swingfishing.yellowstone_fish",
+      "text": "entry.swingfishing.yellowstone_fish.desc"
+    }
+  ]
+}

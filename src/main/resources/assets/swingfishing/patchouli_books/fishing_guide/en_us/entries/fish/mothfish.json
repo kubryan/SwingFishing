@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.mothfish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:mothfish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:mothfish",
+      "title": "item.swingfishing.mothfish",
+      "text": "entry.swingfishing.mothfish.desc"
+    }
+  ]
+}

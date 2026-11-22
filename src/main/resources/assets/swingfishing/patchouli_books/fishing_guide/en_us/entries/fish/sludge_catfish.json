@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.sludge_catfish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:sludge_catfish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:sludge_catfish",
+      "title": "item.swingfishing.sludge_catfish",
+      "text": "entry.swingfishing.sludge_catfish.desc"
+    }
+  ]
+}

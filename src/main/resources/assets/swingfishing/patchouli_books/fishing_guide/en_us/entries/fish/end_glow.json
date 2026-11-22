@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.end_glow",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:end_glow",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:end_glow",
+      "title": "item.swingfishing.end_glow",
+      "text": "entry.swingfishing.end_glow.desc"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.ordinary_shrimp",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:ordinary_shrimp",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:ordinary_shrimp",
+      "title": "item.swingfishing.ordinary_shrimp",
+      "text": "entry.swingfishing.ordinary_shrimp.desc"
+    }
+  ]
+}

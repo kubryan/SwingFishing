@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.cloudfin",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:cloudfin",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:cloudfin",
+      "title": "item.swingfishing.cloudfin",
+      "text": "entry.swingfishing.cloudfin.desc"
+    }
+  ]
+}

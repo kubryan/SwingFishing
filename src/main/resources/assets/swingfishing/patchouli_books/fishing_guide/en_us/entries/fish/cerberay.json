@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.cerberay",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:cerberay",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:cerberay",
+      "title": "item.swingfishing.cerberay",
+      "text": "entry.swingfishing.cerberay.desc"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.crystalback_boreal",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:crystalback_boreal",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:crystalback_boreal",
+      "title": "item.swingfishing.crystalback_boreal",
+      "text": "entry.swingfishing.crystalback_boreal.desc"
+    }
+  ]
+}

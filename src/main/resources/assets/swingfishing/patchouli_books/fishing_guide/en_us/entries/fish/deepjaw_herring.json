@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.deepjaw_herring",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:deepjaw_herring",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:deepjaw_herring",
+      "title": "item.swingfishing.deepjaw_herring",
+      "text": "entry.swingfishing.deepjaw_herring.desc"
+    }
+  ]
+}

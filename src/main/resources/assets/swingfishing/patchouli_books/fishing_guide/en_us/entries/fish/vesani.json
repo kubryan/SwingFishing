@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.vesani",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:vesani",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:vesani",
+      "title": "item.swingfishing.vesani",
+      "text": "entry.swingfishing.vesani.desc"
+    }
+  ]
+}

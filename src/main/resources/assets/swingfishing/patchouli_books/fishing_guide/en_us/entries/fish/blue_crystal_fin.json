@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.blue_crystal_fin",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:blue_crystal_fin",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:blue_crystal_fin",
+      "title": "item.swingfishing.blue_crystal_fin",
+      "text": "entry.swingfishing.blue_crystal_fin.desc"
+    }
+  ]
+}

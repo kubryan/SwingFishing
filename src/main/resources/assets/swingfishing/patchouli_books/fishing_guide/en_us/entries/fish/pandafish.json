@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.pandafish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:pandafish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:pandafish",
+      "title": "item.swingfishing.pandafish",
+      "text": "entry.swingfishing.pandafish.desc"
+    }
+  ]
+}

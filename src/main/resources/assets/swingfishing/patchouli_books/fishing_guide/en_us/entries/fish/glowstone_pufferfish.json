@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.glowstone_pufferfish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:glowstone_pufferfish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:glowstone_pufferfish",
+      "title": "item.swingfishing.glowstone_pufferfish",
+      "text": "entry.swingfishing.glowstone_pufferfish.desc"
+    }
+  ]
+}

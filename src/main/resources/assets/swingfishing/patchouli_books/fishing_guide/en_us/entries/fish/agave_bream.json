@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.agave_bream",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:agave_bream",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:agave_bream",
+      "title": "item.swingfishing.agave_bream",
+      "text": "entry.swingfishing.agave_bream.desc"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.solarfish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:solarfish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:solarfish",
+      "title": "item.swingfishing.solarfish",
+      "text": "entry.swingfishing.solarfish.desc"
+    }
+  ]
+}

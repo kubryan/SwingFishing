@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.divine_jellyfish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:divine_jellyfish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:divine_jellyfish",
+      "title": "item.swingfishing.divine_jellyfish",
+      "text": "entry.swingfishing.divine_jellyfish.desc"
+    }
+  ]
+}

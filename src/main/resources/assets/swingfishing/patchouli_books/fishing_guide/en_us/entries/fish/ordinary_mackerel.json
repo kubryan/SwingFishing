@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.ordinary_mackerel",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:ordinary_mackerel",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:ordinary_mackerel",
+      "title": "item.swingfishing.ordinary_mackerel",
+      "text": "entry.swingfishing.ordinary_mackerel.desc"
+    }
+  ]
+}

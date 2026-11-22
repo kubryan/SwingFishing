@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.sun_seeking_carp",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:sun_seeking_carp",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:sun_seeking_carp",
+      "title": "item.swingfishing.sun_seeking_carp",
+      "text": "entry.swingfishing.sun_seeking_carp.desc"
+    }
+  ]
+}

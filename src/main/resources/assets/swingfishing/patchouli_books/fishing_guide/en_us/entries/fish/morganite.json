@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.morganite",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:morganite",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:morganite",
+      "title": "item.swingfishing.morganite",
+      "text": "entry.swingfishing.morganite.desc"
+    }
+  ]
+}

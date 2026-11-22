@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.lily_snapper",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:lily_snapper",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:lily_snapper",
+      "title": "item.swingfishing.lily_snapper",
+      "text": "entry.swingfishing.lily_snapper.desc"
+    }
+  ]
+}

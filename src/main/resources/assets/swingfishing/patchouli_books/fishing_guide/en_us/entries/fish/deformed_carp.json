@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.deformed_carp",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:deformed_carp",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:deformed_carp",
+      "title": "item.swingfishing.deformed_carp",
+      "text": "entry.swingfishing.deformed_carp.desc"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.luminous_mackerel",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:luminous_mackerel",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:luminous_mackerel",
+      "title": "item.swingfishing.luminous_mackerel",
+      "text": "entry.swingfishing.luminous_mackerel.desc"
+    }
+  ]
+}

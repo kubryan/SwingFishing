@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.sculkfish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:sculkfish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:sculkfish",
+      "title": "item.swingfishing.sculkfish",
+      "text": "entry.swingfishing.sculkfish.desc"
+    }
+  ]
+}

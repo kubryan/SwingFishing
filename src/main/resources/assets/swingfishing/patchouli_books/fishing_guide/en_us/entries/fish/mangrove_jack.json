@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.mangrove_jack",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:mangrove_jack",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:mangrove_jack",
+      "title": "item.swingfishing.mangrove_jack",
+      "text": "entry.swingfishing.mangrove_jack.desc"
+    }
+  ]
+}

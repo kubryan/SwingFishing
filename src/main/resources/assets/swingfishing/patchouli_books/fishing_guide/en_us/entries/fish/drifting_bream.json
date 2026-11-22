@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.drifting_bream",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:drifting_bream",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:drifting_bream",
+      "title": "item.swingfishing.drifting_bream",
+      "text": "entry.swingfishing.drifting_bream.desc"
+    }
+  ]
+}

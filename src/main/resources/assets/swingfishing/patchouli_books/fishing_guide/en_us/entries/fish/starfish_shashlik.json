@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.starfish_shashlik",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:starfish_shashlik",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:starfish_shashlik",
+      "title": "item.swingfishing.starfish_shashlik",
+      "text": "entry.swingfishing.starfish_shashlik.desc"
+    }
+  ]
+}

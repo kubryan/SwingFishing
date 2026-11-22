@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.mossfin",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:mossfin",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:mossfin",
+      "title": "item.swingfishing.mossfin",
+      "text": "entry.swingfishing.mossfin.desc"
+    }
+  ]
+}

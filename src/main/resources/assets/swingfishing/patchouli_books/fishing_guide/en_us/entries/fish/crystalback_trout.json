@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.crystalback_trout",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:crystalback_trout",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:crystalback_trout",
+      "title": "item.swingfishing.crystalback_trout",
+      "text": "entry.swingfishing.crystalback_trout.desc"
+    }
+  ]
+}

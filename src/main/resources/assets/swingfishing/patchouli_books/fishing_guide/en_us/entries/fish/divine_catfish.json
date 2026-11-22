@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.divine_catfish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:divine_catfish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:divine_catfish",
+      "title": "item.swingfishing.divine_catfish",
+      "text": "entry.swingfishing.divine_catfish.desc"
+    }
+  ]
+}

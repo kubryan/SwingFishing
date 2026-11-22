@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.muddy_catfish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:muddy_catfish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:muddy_catfish",
+      "title": "item.swingfishing.muddy_catfish",
+      "text": "entry.swingfishing.muddy_catfish.desc"
+    }
+  ]
+}

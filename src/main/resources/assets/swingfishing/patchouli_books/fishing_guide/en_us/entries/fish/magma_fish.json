@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.magma_fish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:magma_fish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:magma_fish",
+      "title": "item.swingfishing.magma_fish",
+      "text": "entry.swingfishing.magma_fish.desc"
+    }
+  ]
+}

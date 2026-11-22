@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.sporefish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:sporefish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:sporefish",
+      "title": "item.swingfishing.sporefish",
+      "text": "entry.swingfishing.sporefish.desc"
+    }
+  ]
+}

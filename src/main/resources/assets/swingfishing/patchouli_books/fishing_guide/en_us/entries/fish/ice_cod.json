@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.ice_cod",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:ice_cod",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:ice_cod",
+      "title": "item.swingfishing.ice_cod",
+      "text": "entry.swingfishing.ice_cod.desc"
+    }
+  ]
+}

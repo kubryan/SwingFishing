@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.redscaled_tuna",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:redscaled_tuna",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:redscaled_tuna",
+      "title": "item.swingfishing.redscaled_tuna",
+      "text": "entry.swingfishing.redscaled_tuna.desc"
+    }
+  ]
+}

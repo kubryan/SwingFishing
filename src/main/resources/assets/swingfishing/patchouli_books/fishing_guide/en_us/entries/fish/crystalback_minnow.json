@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.crystalback_minnow",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:crystalback_minnow",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:crystalback_minnow",
+      "title": "item.swingfishing.crystalback_minnow",
+      "text": "entry.swingfishing.crystalback_minnow.desc"
+    }
+  ]
+}

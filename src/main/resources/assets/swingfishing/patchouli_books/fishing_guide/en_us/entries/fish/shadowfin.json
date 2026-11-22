@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.shadowfin",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:shadowfin",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:shadowfin",
+      "title": "item.swingfishing.shadowfin",
+      "text": "entry.swingfishing.shadowfin.desc"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.willow_bream",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:willow_bream",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:willow_bream",
+      "title": "item.swingfishing.willow_bream",
+      "text": "entry.swingfishing.willow_bream.desc"
+    }
+  ]
+}

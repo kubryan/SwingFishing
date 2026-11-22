@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.voidfin",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:voidfin",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:voidfin",
+      "title": "item.swingfishing.voidfin",
+      "text": "entry.swingfishing.voidfin.desc"
+    }
+  ]
+}

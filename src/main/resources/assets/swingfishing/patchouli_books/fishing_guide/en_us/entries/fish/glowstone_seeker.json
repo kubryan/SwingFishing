@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.glowstone_seeker",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:glowstone_seeker",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:glowstone_seeker",
+      "title": "item.swingfishing.glowstone_seeker",
+      "text": "entry.swingfishing.glowstone_seeker.desc"
+    }
+  ]
+}

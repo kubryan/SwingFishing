@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.wintery_pike",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:wintery_pike",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:wintery_pike",
+      "title": "item.swingfishing.wintery_pike",
+      "text": "entry.swingfishing.wintery_pike.desc"
+    }
+  ]
+}

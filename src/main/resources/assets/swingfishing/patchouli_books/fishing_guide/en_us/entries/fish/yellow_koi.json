@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.yellow_koi",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:yellow_koi",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:yellow_koi",
+      "title": "item.swingfishing.yellow_koi",
+      "text": "entry.swingfishing.yellow_koi.desc"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.boreal",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:boreal",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:boreal",
+      "title": "item.swingfishing.boreal",
+      "text": "entry.swingfishing.boreal.desc"
+    }
+  ]
+}

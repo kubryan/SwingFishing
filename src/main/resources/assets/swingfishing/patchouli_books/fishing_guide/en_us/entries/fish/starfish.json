@@ -1,0 +1,13 @@
+{
+  "name": "item.swingfishing.starfish",
+  "category": "swingfishing:fish",
+  "icon": "swingfishing:starfish",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "swingfishing:starfish",
+      "title": "item.swingfishing.starfish",
+      "text": "entry.swingfishing.starfish.desc"
+    }
+  ]
+}
