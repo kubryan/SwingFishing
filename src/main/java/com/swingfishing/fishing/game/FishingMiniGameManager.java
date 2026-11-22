@@ -125,16 +125,17 @@ public final class FishingMiniGameManager {
         data.start(firstDirection, hook.getUUID(), hook.blockPosition(),
                 player.level().dimension().location(), 0);
 
-        // 先 roll 稀有度，再從生態域池抽魚
         Set<String> biomePool = resolveBiomeFishPool(player, data);
         FishRarity rarity = FishRarity.roll();
         String fishId = pickFish(rarity, biomePool);
+
         if (fishId == null) {
-            // 極端情況：池子與分級對不上，中止本局避免空狀態
+            // 抽不到魚：必須清掉 active，否則會卡死 / 下一 tick 被 abort
             data.clear();
             return;
         }
-        // 實際稀有度以「抽到的魚」為準（可能因該階無魚而降/升階）
+
+        // 難度以「實際抽到的魚」的稀有度為準
         FishRarity actualRarity = FishRarityLookup.get(fishId);
         data.setRolledCatch(actualRarity, fishId);
 
@@ -166,6 +167,10 @@ public final class FishingMiniGameManager {
         }
         return null;
     }
+
+
+
+
 
     /**
      * 僅供 Debug 測試使用：強制玩家開始小遊戲，並將玩家 UUID 作為假浮標。
@@ -199,16 +204,15 @@ public final class FishingMiniGameManager {
             return;
         }
 
-        // Debug 指令使用玩家 UUID 作為假浮標，因此不要求手持釣竿、也不檢查浮標存活。
+        // Debug 指令使用玩家 UUID 作為假浮標，因此不要求手持釣竿。
         boolean isDebug = data.getBobberUUID() != null && data.getBobberUUID().equals(player.getUUID());
 
-        // 防呆：浮標遺失 / 維度不符 / 實體已移除（debug 模式跳過）
-        if (!isDebug && !isBobberAlive(player, data)) {
-            abortGame(player, data, AbortReason.BOBBER_LOST);
-            return;
-        }
+        // ⚠️ 不要在小遊戲進行中因「浮標消失」而中斷。
+        // 原因：ItemFishedEvent 取消戰利品後，原版仍可能收回/discard 浮標，
+        // 若此處檢查 isBobberAlive，會在 startGame 後 1 tick 就 BOBBER_LOST。
+        // 浮標方塊座標已在 start 時寫入 data，結算選表不需要活著的實體。
 
-        // 防呆：玩家已不在釣竿狀態
+        // 防呆：玩家已不在釣竿狀態（真正換手/收起才中斷）
         if (!isDebug
                 && !(player.getMainHandItem().getItem() instanceof net.minecraft.world.item.FishingRodItem)
                 && !(player.getOffhandItem().getItem() instanceof net.minecraft.world.item.FishingRodItem)) {
@@ -407,6 +411,7 @@ public final class FishingMiniGameManager {
     }
 
     /** 依浮標位置決定本生態域可用的魚 ID 池（不含命名空間）。 */
+    /** 依浮標位置決定本生態域可用的魚 ID 池（不含命名空間）。 */
     private static Set<String> resolveBiomeFishPool(ServerPlayer player, FishingMiniGameData data) {
         BlockPos bobberPos = data.getBobberBlockPos();
         ResourceLocation bobberDimension = data.getBobberDimension();
@@ -457,7 +462,7 @@ public final class FishingMiniGameManager {
                 "purple_carp", "pyrotrout", "rainfin", "red_koi", "ripple_catfish", "rockgill",
                 "sage_catfish", "scalding_pike", "sea_bass", "shadowfin", "silverfin_pike",
                 "silverveil_perch", "sludge_catfish", "sun_seeking_carp", "sunflower_carp",
-                "sunny_sturgeon", "thunder_bass", "thunderfin", "tropical_catfish", "twilight_koi",
+                "sunny_sturgeon", "thunder_bass", "thunderfin", "tropical_catfish",
                 "vivid_moss", "willow_bream", "wintery_pike", "yellow_koi"
         );
     }
@@ -557,12 +562,13 @@ public final class FishingMiniGameManager {
             var item = BuiltInRegistries.ITEM.get(itemKey);
             if (item != null && item != net.minecraft.world.item.Items.AIR) {
                 ItemStack stack = new ItemStack(item);
+                var fishName = stack.getHoverName();
                 if (!player.getInventory().add(stack)) {
                     player.drop(stack, false);
                 }
                 if (data.addCaughtFish(fishId)) {
                     player.sendSystemMessage(net.minecraft.network.chat.Component.translatable(
-                            "message.swingfishing.fish_book.new_discovery", stack.getHoverName()));
+                            "message.swingfishing.fish_book.new_discovery", fishName));
                     player.level().playSound(null, player.blockPosition(),
                             SoundEvents.PLAYER_LEVELUP, SoundSource.PLAYERS, 0.5F, 2.0F);
                 }
@@ -590,6 +596,7 @@ public final class FishingMiniGameManager {
                 .create(LootContextParamSets.FISHING);
 
         for (ItemStack stack : lootTable.getRandomItems(params)) {
+            var fishName = stack.getHoverName();
             if (!player.getInventory().add(stack)) {
                 player.drop(stack, false);
             }
@@ -598,7 +605,7 @@ public final class FishingMiniGameManager {
                     && !"fish_book".equals(itemId.getPath())
                     && data.addCaughtFish(itemId.getPath())) {
                 player.sendSystemMessage(net.minecraft.network.chat.Component.translatable(
-                        "message.swingfishing.fish_book.new_discovery", stack.getHoverName()));
+                        "message.swingfishing.fish_book.new_discovery", fishName));
                 player.level().playSound(null, player.blockPosition(),
                         SoundEvents.PLAYER_LEVELUP, SoundSource.PLAYERS, 0.5F, 2.0F);
             }

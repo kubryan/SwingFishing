@@ -16,6 +16,7 @@
 | 魚圖鑑 | ✅ | Fish Book 與 Patchouli 魚圖鑑已建立，目前有 140 個魚類條目。 |
 | Data Pack 戰利品表 | ✅ | 位於 `data/swingfishing/loot_table/fishing/`（Minecraft 1.21 正確單數路徑）；`ocean` 56、`river` 63、`nether` 10、`end` 11，共涵蓋 140 條魚。 |
 | 浮標位置判定 | ✅ | 戰利品表依「浮標所在方塊」的維度與生態域選擇，不再以玩家位置為主要依據。 |
+| 圖鑑聊天名稱 | ✅ | 先保存魚的顯示名稱再加入背包，避免 `ItemStack` 被清空後顯示成「空氣」。 |
 | 單元測試 | ✅ | 已有 `FishingMiniGameDataTest` 與 `SwipeDirectionTest`，目前 Gradle 測試通過。 |
 
 ## 目前的主要流程
