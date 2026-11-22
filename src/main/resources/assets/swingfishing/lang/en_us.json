@@ -313,5 +313,12 @@
   "entry.swingfishing.tropical_catfish.desc": "A mysterious fish that can be found while fishing.",
   "entry.swingfishing.witchfish.desc": "A mysterious fish that can be found while fishing.",
   "entry.swingfishing.yellow_koi.desc": "A mysterious fish that can be found while fishing.",
-  "swingfishing.configuration.lureBonusTicksPerLevel": "Lure Bonus Ticks per Level"
+  "swingfishing.configuration.lureBonusTicksPerLevel": "Lure Bonus Ticks per Level",
+  "rarity.swingfishing.common": "Common",
+  "rarity.swingfishing.uncommon": "Uncommon",
+  "rarity.swingfishing.rare": "Rare",
+  "rarity.swingfishing.epic": "Epic",
+  "rarity.swingfishing.mythic": "Mythic",
+  "rarity.swingfishing.legendary": "Legendary",
+  "rarity.swingfishing.unique": "Unique"
 }

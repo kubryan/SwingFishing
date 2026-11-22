@@ -2,6 +2,8 @@ package com.swingfishing.fishing.game;
 
 import com.swingfishing.SwingFishing;
 import com.swingfishing.config.ModConfig;
+import com.swingfishing.fishing.FishRarity;
+import com.swingfishing.fishing.FishRarityLookup;
 import com.swingfishing.fishing.data.FishingMiniGameData;
 import com.swingfishing.fishing.data.ModAttachments;
 import com.swingfishing.network.MiniGameSyncPayload;
@@ -24,6 +26,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.Registries;
 
 import java.util.List;
+import java.util.Set;
 import java.util.UUID;
 
 /**
@@ -123,9 +126,48 @@ public final class FishingMiniGameManager {
         data.start(firstDirection, hook.getUUID(), hook.blockPosition(),
                 player.level().dimension().location(), 0);
 
+        // 1. 決定生態域對應的魚 ID 池（可先從現有四個 loot 表維護一份 Set，或暫時 hardcode）
+        Set<String> biomePool = resolveBiomeFishPool(player, data); // 你實作：ocean/river/nether/end
+
+        // 2. Roll 稀有度
+        FishRarity rarity = FishRarity.roll();
+
+        // 3. 從該稀有度 ∩ 生態域池抽一條；若該階在此生態域沒魚，往下階找
+        String fishId = pickFish(rarity, biomePool);
+        if (fishId == null) {
+            // 極端情況：整池都沒有，退回任意一條或中止
+            return;
+        }
+        data.setRolledCatch(rarity, fishId);
+
+        // 4. 通知客戶端（可把 rarity 也塞進 sync payload，方便 HUD 顯示「稀有度：史詩」）
+        notifier.onGameStarted(player, firstDirection);
+
         notifier.onGameStarted(player, firstDirection);
         player.level().playSound(null, player.blockPosition(),
                 SoundEvents.FISHING_BOBBER_SPLASH, SoundSource.PLAYERS, 1.0F, 1.0F);
+    }
+
+    private static String pickFish(FishRarity preferred, Set<String> biomePool) {
+        // 從 preferred 往 COMMON 方向找，直到有魚
+        FishRarity[] order = FishRarity.values();
+        int start = preferred.ordinal();
+        for (int i = start; i >= 0; i--) {
+            Set<String> candidates = FishRarityLookup.getFishOfRarityInPool(order[i], biomePool);
+            if (!candidates.isEmpty()) {
+                String[] arr = candidates.toArray(new String[0]);
+                return arr[(int) (Math.random() * arr.length)];
+            }
+        }
+        // 再往上找
+        for (int i = start + 1; i < order.length; i++) {
+            Set<String> candidates = FishRarityLookup.getFishOfRarityInPool(order[i], biomePool);
+            if (!candidates.isEmpty()) {
+                String[] arr = candidates.toArray(new String[0]);
+                return arr[(int) (Math.random() * arr.length)];
+            }
+        }
+        return null;
     }
 
     /**
@@ -187,23 +229,18 @@ public final class FishingMiniGameManager {
     }
 
     /**
-     * 計算當前玩家的作答超時 ticks（含魚餌附魔加成）。
-     *
-     * <p><b>公式：</b>{@code SWIPE_TIMEOUT_TICKS + LURE等級 × LURE_BONUS_TICKS_PER_LEVEL}。</p>
-     *
-     * <p><b>與原版釣魚差異：</b>原版魚餌每級減少 5 秒（= 100 ticks）的等待時間；
-     * 本模組的小遊戲基準超時僅 24 ticks（1.2 秒），若照原版比例會失去節奏，
-     * 因此加成改用 {@code ModConfig.LURE_BONUS_TICKS_PER_LEVEL}（預設 5 ticks／級），
-     * 可透過 Config 調整或設為 0 關閉。</p>
-     *
-     * <p><b>共用點：</b>{@link com.swingfishing.network.NetworkClientNotifier#send} 也呼叫此方法，
-     * 確保伺服器判定與 HUD 顯示使用完全相同的公式，避免兩邊漂移。</p>
-     *
-     * @param player 伺服器端玩家（需持有釣竿，否則回傳基準值）
-     * @return 作答超時 ticks（>= {@code SWIPE_TIMEOUT_TICKS}）
+     * 計算當前玩家的作答超時 ticks。
+     * <p>優先使用本回合預抽稀有度的 timeoutTicks；若無稀有度（舊流程／debug）則回退 Config。
+     * 再疊加魚餌（Lure）附魔加成。</p>
      */
     public static int computeTimeoutTicks(ServerPlayer player) {
-        int base = ModConfig.SWIPE_TIMEOUT_TICKS.get();
+        FishingMiniGameData data = player.getData(ModAttachments.FISHING_MINI_GAME.get());
+        int base;
+        if (data.getRolledRarity() != null) {
+            base = data.getRolledRarity().timeoutTicks;
+        } else {
+            base = ModConfig.SWIPE_TIMEOUT_TICKS.get();
+        }
         int lureLevel = getFishingRodEnchantmentLevel(
                 player, net.minecraft.world.item.enchantment.Enchantments.LURE);
         int perLevel = ModConfig.LURE_BONUS_TICKS_PER_LEVEL.get();
@@ -321,10 +358,12 @@ public final class FishingMiniGameManager {
     // ============================================================
 
     private static void handleSuccess(ServerPlayer player, FishingMiniGameData data) {
-        int requiredSuccess = ModConfig.REQUIRED_SUCCESS_SWIPES.get();
+        int requiredSuccess = data.getRolledRarity() != null
+                ? data.getRolledRarity().requiredSuccess
+                : ModConfig.REQUIRED_SUCCESS_SWIPES.get();
+
         data.setIgnoreTicks(ModConfig.SWIPE_COOLDOWN_TICKS.get());
 
-        // 獲取浮標實體，用來定位音效與粒子
         FishingHook hook = findHook(player, data.getBobberUUID());
         double px = hook != null ? hook.getX() : player.getX();
         double py = hook != null ? hook.getY() + 0.2 : player.getY() + 0.5;
@@ -332,7 +371,7 @@ public final class FishingMiniGameManager {
 
         if (data.getSuccessCount() + 1 >= requiredSuccess) {
             data.incrementSuccess(null);
-            finishGame(player, data, true, px, py, pz); // 傳入位置給結束方法
+            finishGame(player, data, true, px, py, pz);
             return;
         }
 
@@ -342,7 +381,6 @@ public final class FishingMiniGameManager {
         notifier.onSuccess(player, data.getSuccessCount(), requiredSuccess);
         notifier.onDirectionChanged(player, next);
 
-        // 在浮標位置播放拉線音效與小水花
         player.level().playSound(null, px, py, pz,
                 SoundEvents.FISHING_BOBBER_RETRIEVE, SoundSource.PLAYERS, 0.8F, 1.2F);
 
@@ -353,49 +391,45 @@ public final class FishingMiniGameManager {
     }
 
     private static void handleFailure(ServerPlayer player, FishingMiniGameData data) {
-        int maxFailed = ModConfig.MAX_FAILED_SWIPES.get();
-        data.incrementFailed();
+        int maxFailed = data.getRolledRarity() != null
+                ? data.getRolledRarity().maxFailed
+                : ModConfig.MAX_FAILED_SWIPES.get();
 
-        // 1. 設定冷卻時間，防止玩家歸位動作被判定為下一次失誤
+        data.incrementFailed();
         data.setIgnoreTicks(ModConfig.SWIPE_COOLDOWN_TICKS.get());
 
-        // 2. 獲取浮標位置（用於音效定位）
         FishingHook hook = findHook(player, data.getBobberUUID());
         double px = hook != null ? hook.getX() : player.getX();
         double py = hook != null ? hook.getY() + 0.2 : player.getY() + 0.5;
         double pz = hook != null ? hook.getZ() : player.getZ();
 
-        // 3. 通知客戶端與播放失敗音效（在浮標處發出低沉的水花警告聲）
         notifier.onFailure(player, data.getFailedCount(), maxFailed);
         player.level().playSound(null, px, py, pz,
                 SoundEvents.FISHING_BOBBER_SPLASH, SoundSource.PLAYERS, 0.6F, 0.5F);
 
-        // 4. 檢查是否達到失敗上限，並將座標傳入 finishGame
         if (data.getFailedCount() >= maxFailed) {
             finishGame(player, data, false, px, py, pz);
         }
     }
 
     private static void handleTimeout(ServerPlayer player, FishingMiniGameData data) {
-        int maxFailed = ModConfig.MAX_FAILED_SWIPES.get();
-        data.incrementFailed();
-        data.resetAccumulation(); // 重置累積，避免殘留的滑鼠移動影響下一輪
+        int maxFailed = data.getRolledRarity() != null
+                ? data.getRolledRarity().maxFailed
+                : ModConfig.MAX_FAILED_SWIPES.get();
 
-        // 1. 設定冷卻時間
+        data.incrementFailed();
+        data.resetAccumulation();
         data.setIgnoreTicks(ModConfig.SWIPE_COOLDOWN_TICKS.get());
 
-        // 2. 獲取浮標位置
         FishingHook hook = findHook(player, data.getBobberUUID());
         double px = hook != null ? hook.getX() : player.getX();
         double py = hook != null ? hook.getY() + 0.2 : player.getY() + 0.5;
         double pz = hook != null ? hook.getZ() : player.getZ();
 
-        // 3. 通知客戶端與播放超時音效
         notifier.onFailure(player, data.getFailedCount(), maxFailed);
         player.level().playSound(null, px, py, pz,
                 SoundEvents.FISHING_BOBBER_SPLASH, SoundSource.PLAYERS, 0.8F, 0.4F);
 
-        // 4. 檢查是否達到失敗上限，並將座標傳入 finishGame
         if (data.getFailedCount() >= maxFailed) {
             finishGame(player, data, false, px, py, pz);
         }
@@ -461,15 +495,41 @@ public final class FishingMiniGameManager {
     // ============================================================
 
     /**
-     * 依玩家所在生態域讀取 Data Pack 戰利品表。
-     * 權重、原版寶藏／垃圾與魚種均由 JSON 定義，不在 Java 中維護魚名清單。
+     * 發放本回合預抽的魚。
+     * <p>上鉤時已決定 {@code rolledFishId}；成功後直接發放，不再重新 roll Loot Table。
+     * 若因舊存檔／debug 沒有預抽結果，則回退到原本的生態域 Loot Table。</p>
      */
     private static void grantFishingLoot(ServerPlayer player, FishingMiniGameData data) {
+        String fishId = data.getRolledFishId();
+
+        // 有預抽結果：直接發放該魚
+        if (fishId != null && !fishId.isEmpty()) {
+            ResourceLocation itemKey = ResourceLocation.fromNamespaceAndPath(SwingFishing.MOD_ID, fishId);
+            var item = BuiltInRegistries.ITEM.get(itemKey);
+            if (item != null && item != net.minecraft.world.item.Items.AIR) {
+                ItemStack stack = new ItemStack(item);
+                if (!player.getInventory().add(stack)) {
+                    player.drop(stack, false);
+                }
+                if (data.addCaughtFish(fishId)) {
+                    player.sendSystemMessage(net.minecraft.network.chat.Component.translatable(
+                            "message.swingfishing.fish_book.new_discovery", stack.getHoverName()));
+                    player.level().playSound(null, player.blockPosition(),
+                            SoundEvents.PLAYER_LEVELUP, SoundSource.PLAYERS, 0.5F, 2.0F);
+                }
+                return;
+            }
+            // item 無效則落入下方 fallback
+        }
+
+        // Fallback：舊流程，依生態域 Loot Table 發放
         ResourceKey<LootTable> lootTableKey = ResourceKey.create(
                 Registries.LOOT_TABLE, selectFishingLootTable(player, data));
         LootTable lootTable = player.serverLevel().getServer().reloadableRegistries()
                 .getLootTable(lootTableKey);
-        if (lootTable == null) return;
+        if (lootTable == null) {
+            return;
+        }
 
         ItemStack rod = player.getMainHandItem().getItem() instanceof net.minecraft.world.item.FishingRodItem
                 ? player.getMainHandItem() : player.getOffhandItem();
@@ -482,9 +542,12 @@ public final class FishingMiniGameManager {
                 .create(LootContextParamSets.FISHING);
 
         for (ItemStack stack : lootTable.getRandomItems(params)) {
-            if (!player.getInventory().add(stack)) player.drop(stack, false);
+            if (!player.getInventory().add(stack)) {
+                player.drop(stack, false);
+            }
             ResourceLocation itemId = BuiltInRegistries.ITEM.getKey(stack.getItem());
-            if (SwingFishing.MOD_ID.equals(itemId.getNamespace()) && !"fish_book".equals(itemId.getPath())
+            if (SwingFishing.MOD_ID.equals(itemId.getNamespace())
+                    && !"fish_book".equals(itemId.getPath())
                     && data.addCaughtFish(itemId.getPath())) {
                 player.sendSystemMessage(net.minecraft.network.chat.Component.translatable(
                         "message.swingfishing.fish_book.new_discovery", stack.getHoverName()));

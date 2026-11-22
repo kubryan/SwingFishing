@@ -18,9 +18,15 @@ public final class NetworkClientNotifier implements FishingMiniGameManager.Clien
     @Override
     public void onGameStarted(ServerPlayer player, SwipeDirection direction) {
         var data = player.getData(com.swingfishing.fishing.data.ModAttachments.FISHING_MINI_GAME.get());
+        int required = data.getRolledRarity() != null
+                ? data.getRolledRarity().requiredSuccess
+                : ModConfig.REQUIRED_SUCCESS_SWIPES.get();
+        int maxFailed = data.getRolledRarity() != null
+                ? data.getRolledRarity().maxFailed
+                : ModConfig.MAX_FAILED_SWIPES.get();
         send(player, true, direction,
-                data.getSuccessCount(), ModConfig.REQUIRED_SUCCESS_SWIPES.get(),
-                data.getFailedCount(), ModConfig.MAX_FAILED_SWIPES.get(),
+                data.getSuccessCount(), required,
+                data.getFailedCount(), maxFailed,
                 MiniGameSyncPayload.EndReason.NONE);
     }
 
@@ -40,7 +46,7 @@ public final class NetworkClientNotifier implements FishingMiniGameManager.Clien
         // 成功但未換方向（例如成功後立即達標）時，發送不含方向變更的同步。
         var data = player.getData(com.swingfishing.fishing.data.ModAttachments.FISHING_MINI_GAME.get());
         send(player, data.isActive(), data.getTargetDirection(),
-                successCount, requiredSuccess,
+                data.getSuccessCount(), ModConfig.REQUIRED_SUCCESS_SWIPES.get(),
                 data.getFailedCount(), ModConfig.MAX_FAILED_SWIPES.get(),
                 MiniGameSyncPayload.EndReason.NONE);
     }
@@ -50,7 +56,7 @@ public final class NetworkClientNotifier implements FishingMiniGameManager.Clien
         var data = player.getData(com.swingfishing.fishing.data.ModAttachments.FISHING_MINI_GAME.get());
         send(player, data.isActive(), data.getTargetDirection(),
                 data.getSuccessCount(), ModConfig.REQUIRED_SUCCESS_SWIPES.get(),
-                failedCount, maxFailed,
+                data.getFailedCount(), ModConfig.MAX_FAILED_SWIPES.get(),
                 MiniGameSyncPayload.EndReason.NONE);
     }
 

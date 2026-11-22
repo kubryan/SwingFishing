@@ -1,5 +1,6 @@
 package com.swingfishing.fishing.data;
 
+import com.swingfishing.fishing.FishRarity;
 import com.swingfishing.fishing.game.SwipeDirection;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
@@ -71,6 +72,12 @@ public class FishingMiniGameData implements INBTSerializable<CompoundTag> {
     /** 忽略輸入的剩餘 ticks（用於甩動後的歸位冷卻）。 */
     private int ignoreTicks;
 
+    /** 本回合預抽的稀有度（上鉤時決定） */
+    private FishRarity rolledRarity;
+
+    /** 本回合預抽的魚 ID（不含命名空間，上鉤時決定） */
+    private String rolledFishId;
+
     /**
      * 已發現的魚類 ID 集合（跨小遊戲持久資料，用於魚圖鑑）。
      *
@@ -105,6 +112,11 @@ public class FishingMiniGameData implements INBTSerializable<CompoundTag> {
      */
     public void start(SwipeDirection firstDirection, UUID bobberUUID, int initialTicks) {
         start(firstDirection, bobberUUID, null, null, initialTicks);
+    }
+
+    public void setRolledCatch(FishRarity rarity, String fishId) {
+        this.rolledRarity = rarity;
+        this.rolledFishId = fishId;
     }
 
     /** 開始小遊戲並記錄浮標所在方塊，供結算時判定生態域。 */
@@ -149,6 +161,8 @@ public class FishingMiniGameData implements INBTSerializable<CompoundTag> {
         // 3. 清理累積與冷卻
         resetAccumulation();
         this.ignoreTicks = 0;
+        this.rolledRarity = null;
+        this.rolledFishId = null;
 
         // 4. caughtFish 不動（跨局資料）
     }
@@ -272,6 +286,8 @@ public class FishingMiniGameData implements INBTSerializable<CompoundTag> {
         if (bobberDimension != null) {
             tag.putString("BobberDimension", bobberDimension.toString());
         }
+        if (rolledRarity != null) tag.putString("RolledRarity", rolledRarity.name());
+        if (rolledFishId != null) tag.putString("RolledFishId", rolledFishId);
 
         // ✨ 魚圖鑑已發現紀錄（跨小遊戲持久資料）
         // 使用 ListTag<StringTag> 而非逗號分隔字串：ID 含逗號時仍安全，
@@ -360,5 +376,13 @@ public class FishingMiniGameData implements INBTSerializable<CompoundTag> {
     /** 當前是否處於忽略輸入的冷卻狀態。 */
     public boolean isIgnoringInput() {
         return ignoreTicks > 0;
+    }
+
+    public FishRarity getRolledRarity() {
+        return rolledRarity;
+    }
+
+    public String getRolledFishId() {
+        return rolledFishId;
     }
 }

@@ -313,5 +313,12 @@
   "entry.swingfishing.tropical_catfish.desc": "這是一種神秘的魚類，似乎可以在釣魚時發現。",
   "entry.swingfishing.witchfish.desc": "這是一種神秘的魚類，似乎可以在釣魚時發現。",
   "entry.swingfishing.yellow_koi.desc": "這是一種神秘的魚類，似乎可以在釣魚時發現。",
-  "swingfishing.configuration.lureBonusTicksPerLevel": "魚餌附魔加成（每級 Ticks）"
+  "swingfishing.configuration.lureBonusTicksPerLevel": "魚餌附魔加成（每級 Ticks）",
+  "rarity.swingfishing.common": "普通",
+  "rarity.swingfishing.uncommon": "常見",
+  "rarity.swingfishing.rare": "稀有",
+  "rarity.swingfishing.epic": "史詩",
+  "rarity.swingfishing.mythic": "神話",
+  "rarity.swingfishing.legendary": "傳說",
+  "rarity.swingfishing.unique": "獨特"
 }
